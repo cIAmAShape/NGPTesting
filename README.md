@@ -4,7 +4,8 @@ This directory exists purely to troubleshoot issues that NGP students might have
 
 
 ## Student-teaching scripts
-> Plotnoise.ipynb -> Teaching students basics of matplotlib noise randomness in trigonmetric waves (graphs sine and cos with noise) 
+> Plotnoise.ipynb -> Teaching students basics of matplotlib noise randomness in trigonmetric waves (graphs sine and cos with noise)
+> 
 > BinomialPractice.ipynb -> Basics of binomial distribution graphing
 
 
