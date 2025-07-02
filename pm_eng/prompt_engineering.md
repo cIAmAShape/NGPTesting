@@ -93,7 +93,7 @@ Bad Prompt: <br />
 > Write python for Leslie Matrix
 
 Better Prompt: <br />
-> "Write a Python function to simulate population growth using a Leslie matrix. Use a total of three age groups.
+> Write a Python function to simulate population growth using a Leslie matrix. Use a total of three age groups.
 
 ## 3. Use Follow-Up Questions to Reiterate
 
@@ -121,3 +121,63 @@ for year in range(years):
 ```
 Which is all fine and good. But what if you wanted it to use a cleaner, more robust method for matrix multiplication? You can then build upon your previous prompt with:
 > Now rewrite the function using vectorized NumPy operations instead of for-loops.
+
+## 4. Use Step-By-Step Instructions
+
+**Tip:** Break down the task into order parts. <br \>
+
+**Why It Works:** LLMs respond well to sequential logic—just like the way their training data is structured. <br \>
+
+#### Example Usage
+
+> First define a 3x3 Leslie matrix. Then initialize a population vector. Then use matrix multiplication to simulate population change over 10 years.
+
+## 5. Provide Background Information in the Prompt
+
+**Tip:** Briefly include necesarry context in prompts to avoid assumptions <br \>
+
+**Why It Works:** LLMs don't retain past knowledge unless you reintroduce it. Supplying context narrows down ambiguity. <br \>
+
+#### Example Usage
+
+> Assume the user is modeling weather systems on a grid. Write a Python class that updates a 2D grid based on neighbor values.
+
+## 6. Specify the Desired Format and Output Structure
+
+**Tip:** Tell the model to output code only, include comments, or return JSON-format if needed. You can also ask it to <br \>
+
+**Why It Works:** LLMs try to mimic the *style* of exmaples. Giving format expectations set a clear *stylistic precedent*. As for output structure, asking them to organize their output helps them output more logically and mirror well-formed coding practice. <br \>
+
+#### Example Usage
+
+> Return only the Python code with the inline comments explaining each step.
+> Divide the output into three sections: (1) input parameters, (2) computation, and (3) Matplotlib visualization.
+
+## 7. Ask for Comparisons or Alternatives 
+
+**Tip:** Have the LLM create and explain multiple approaches towards a problem as well as their trade-offs. This is *especially* good for coding optimizations! <br \>
+
+**Why It Works:** This triggers pattern generation from comparative texts, such as "Method A vs. Method B" documents present in the model's training data. <br \>
+
+#### Example Usage
+
+> Write two Python functions to estimate pi—one using Monte Carlo simulation, and one using a Taylor series expansion. Compare their performance.
+
+## Request Explanations Alongside Code
+
+**Tip:** Ask for brief explanations of what each block of code is doing. <br \>
+
+**Why It Works:** This makes the output reader-friendly (scaffolds understanding) and ensures that the model is *synthesizing sources to make a solution*, not just *copy-pasting one solution and attempting to apply it*. <br \> 
+
+#### Example Usage
+
+> Write a function to numerically solve a homogeneous 2nd-order differential equation given variable coefficents as an input. Explain what the code does at each step.
+
+# Assignment - Fractal Coding Challenge
+Use what you’ve learned about prompt engineering to **design a prompt for ChatGPT (or another free LLM)** that gets it to write Python code that draws a fractal and uses user input of your choice to determine the parameters that shape or color the fractal. <br \>
+  
+**Goal:** <br \>
+Generate code that creates a fractal image (e.g., Mandelbrot set, Koch snowflake, Sierpinski triangle). Modify it to take some parameters as input that allows the user to customize it to make it their personal fractal- so for example, you have them enter their first name or their favorite number  and then have the program use that to generate unique input parameters for generating the fractal. <br \>
+
+Creativity is key! 
+
