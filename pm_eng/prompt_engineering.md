@@ -28,9 +28,21 @@ For this activity, you will need a wifi-enabled web browser and access to an LLM
 | Hugging Face Chat (Mistral, Zephyr, etc.) | Flexible options <br />Requires an Account               |[HuggingFace](https://huggingface.co/)|
 
 ## Prompt Engineering Tips
+
 These tips are inspired by OpenAI’s [official prompt engineering](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api) best practices that we have tailored for generating high-complexity Python code to handle simulations, mathematical modeling, and other related fields.<br /> 
 
 To be clear, these tips are **not** just for Python code. They work great in whatever field you are looking towards and are applicable in most - if not all - fields. Our exercises that we will be doing later are simply about graphical Python.<br />
 
 Without further ado, here are the tips!
+
+
+### 1. Do Your Research
+
+**Tip:** To write a clear and specific prompt, you need to have a good understanding of the thing you're modeling. If you're not already an expert, do some research using *non-LLM-generated sources.* LLM models are a **supplement** to knowledge, not a **replacement**. <br />
+
+**Why It Works:** LLMs (like ChatGPT) can sometimes "hallucinate"—they’ll give confident-sounding answers that may not be factually correct. To avoid being misled, always cross-check important information using **reputable, verifiable sources**. You can use the model to help *find* sources if it can see the internet or has it cached—but then you should verify that those sources are real and trustworthy. <br />
+
+#### Reputable Source Types
+
+
 
