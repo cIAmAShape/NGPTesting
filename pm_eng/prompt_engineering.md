@@ -179,5 +179,18 @@ Use what you’ve learned about prompt engineering to **design a prompt for Chat
 **Goal:** <br \>
 Generate code that creates a fractal image (e.g., Mandelbrot set, Koch snowflake, Sierpinski triangle). Modify it to take some parameters as input that allows the user to customize it to make it their personal fractal- so for example, you have them enter their first name or their favorite number  and then have the program use that to generate unique input parameters for generating the fractal. <br \>
 
-Creativity is key! 
+Creativity is key! You can make the customization whatever input you would like. <br \>
+
+### Your Task:
+1. Write a **clear, well-structured prompt** using at least 4 of the techniques we talked about.
+2. Paste your prompt into your large-language model (LLM) of choice.
+3. Cut and paste the generated code into a file on your machine and attempt to run it. You might have to modify the code to fit, as LLMs often times does not perfectly write the code in your context.
+4. Modify the prompt using the tips and techniques. Retest the new modified code.
+5. Continue to generate more prompts to improve your code until satisfied. Repeat until the code is functional.
+<br \>
+
+Once you have finished, put the following into a text tile:
+* Your original prompt
+* The code and image it generated
+* A short, 2-3 sentence reflection on this workshop. What technique helped the most? What technique didn't help? What would you change?  
 
