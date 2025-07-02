@@ -23,6 +23,6 @@ For this activity, you will need a wifi-enabled web browser and access to an LLM
 
 | LLM Model                                 | Notes on model                                     | URL |
 |-------------------------------------------|----------------------------------------------------|-----|
-| OpenAI ChatGPT (GPT-3.5)                  | No account required <br />Cannot reliably browse the web |     |
-| Claude.ai (Claude 3 Haiku)                | Good in-depth reasoning <br />Requires an Account        |     |
-| Hugging Face Chat (Mistral, Zephyr, etc.) | Flexible options <br />Requires an Account               |     |
+| OpenAI ChatGPT (GPT-3.5)                  | No account required <br />Cannot reliably browse the web |[Chat GPT](https://chatgpt.com/)|
+| Claude.ai (Claude 3 Haiku)                | Good in-depth reasoning <br />Requires an Account        |[Claude](https://claude.ai/)|
+| Hugging Face Chat (Mistral, Zephyr, etc.) | Flexible options <br />Requires an Account               |[HuggingFace](https://huggingface.co/)|
