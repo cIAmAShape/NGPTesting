@@ -95,4 +95,29 @@ Bad Prompt: <br />
 Better Prompt: <br />
 > "Write a Python function to simulate population growth using a Leslie matrix. Use a total of three age groups.
 
-## 3. Use Follow-Up Questions to Reiterate 
+## 3. Use Follow-Up Questions to Reiterate
+
+**Tip:** After a first response, refine your request by building on what you got. <br />
+
+Why it Works: LLMs don’t improve over time—but *you* can improve the result by prompting iteratively, using the model’s previous output as context. <br />
+
+#### Example Use
+
+Let's say you are working on creating that Leslie Matrix code. You prompt the model: <br />
+> Write a Python function to simulate population growth using a Leslie matrix for three age groups.
+The model might generate something like this:
+```python
+initialized_data = [...]
+...
+
+for year in range(years):
+    new_population = [0, 0, 0]
+    new_population[0] = (
+        f_rate[0] * population[0] +
+        f_rate[1] * population[1] +
+        f_rate[2] * population[2]
+    )
+    new_population[1] = ...
+```
+Which is all fine and good. But what if you wanted it to use a cleaner, more robust method for matrix multiplication? You can then build upon your previous prompt with:
+> Now rewrite the function using vectorized NumPy operations instead of for-loops.
