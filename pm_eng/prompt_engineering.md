@@ -19,3 +19,10 @@ We will be going over each step in more detail and providing everyone with an ex
 
 
 ## Exercise Requirements
+For this activity, you will need a wifi-enabled web browser and access to an LLM. You can use any LLM you choose, but we have listed a few below:
+
+| LLM Model                                 | Notes on model                                     | URL |
+|-------------------------------------------|----------------------------------------------------|-----|
+| OpenAI ChatGPT (GPT-3.5)                  | No account required <br />Cannot reliably browse the web |     |
+| Claude.ai (Claude 3 Haiku)                | Good in-depth reasoning <br />Requires an Account        |     |
+| Hugging Face Chat (Mistral, Zephyr, etc.) | Flexible options <br />Requires an Account               |     |
