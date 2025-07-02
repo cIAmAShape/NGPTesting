@@ -50,25 +50,25 @@ Without further ado, here are the tips!
    * Example: MIT 18.06 Linear Algebra
 2. Scientific Journals & Prepint Servers<br />
 Peer-reviewed journals via:
-   * Google Scholar
-   * PubMed
-   * arXiv<br />
+   * [Google Scholar](https://scholar.google.com/)
+   * [PubMed](https://pubmed.ncbi.nlm.nih.gov/) (biomedical)
+   * [arXiv](https://arxiv.org/) (physics, CS, math -not peer-reviewed, but respected highly)<br />
    **Tip:** Ask the LLM to find the DOI or publisher link, then visit that site.
 3. Textbooks and Reference Books<br />
    You can get these suggested by a model, but you can verify them on:
-   * OpenStax
-   * Project Gutenberg
+   * [OpenStax](https://openstax.org/)
+   * [Project Gutenberg](https://www.gutenberg.org/)
 4. Educational Coding Platforms
    Python/math tutorials from:
-   * Real Python
-   * GeeksforGeeks
-   * W3schools
+   * [Real Python](https://realpython.com/)
+   * [GeeksforGeeks](https://www.geeksforgeeks.org/)
+   * [W3schools](https://www.w3schools.com/python/) (full learn-python tutorial)
 5. Government and Academic Research Instritutions<br />
    Reputable sites with .gov or .org domains, such as:
-   * NASA
-   * NOAA
-   * Oak Ridge National Laboratory
-   * National Institues of Health
+   * [NASA](https://www.nasa.gov/)
+   * [NOAA](https://www.noaa.gov/)
+   * [Oak Ridge National Laboratory](https://ornl.gov/)
+   * [National Institues of Health](https://www.nih.gov/)
 6. Professional Societies
    * IEEE, ACM, AMS, SIAM, APS, etc. offer trusted publications and learning resources.
    * They often have "student resources" sections.
