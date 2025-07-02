@@ -37,7 +37,7 @@ Without further ado, here are the tips!
 
 ---
 
-### 1. Do Your Research
+## 1. Do Your Research
 
 **Tip:** To write a clear and specific prompt, you need to have a good understanding of the thing you're modeling. If you're not already an expert, do some research using *non-LLM-generated sources.* LLM models are a **supplement** to knowledge, not a **replacement**. <br />
 
@@ -81,4 +81,18 @@ Starting Prompt: <br />
 Refined Prompt after some Reading: <br />
 > Give me 3 educational sources that explain Mandelbrot sets and show how to draw them in Python. Include information on which parameters affect rendering
 
+## 2. Be Specific and Clear
 
+**Tip:** Spell out what you want, down to the function’s purpose and expected inputs/outputs. Be as specific to the project as you can. The more detail, the better! <br />
+
+**Why it Works:** LLMs work better with precise instructions because they’re pattern-matchers, **not** mind-readers. <br />
+
+#### Example Use
+
+Bad Prompt: <br />
+> Write python for Leslie Matrix
+
+Better Prompt: <br />
+> "Write a Python function to simulate population growth using a Leslie matrix. Use a total of three age groups.
+
+## 3. Use Follow-Up Questions to Reiterate 
