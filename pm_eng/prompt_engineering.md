@@ -48,13 +48,13 @@ Without further ado, here are the tips!
 1. University Course Websites
    * Look for .edu domains or syllabi from instutions like MIT OpenCourseWare, Harvard CS, UC Berkeley, etc.
    * Example: MIT 18.06 Linear Algebra
-2. Scientific Journals & Prepint Servers
-   Peer-reviewed journals via:
+2. Scientific Journals & Prepint Servers<br />
+Peer-reviewed journals via:
    * Google Scholar
    * PubMed
-   * arXiv
+   * arXiv<br />
    **Tip:** Ask the LLM to find the DOI or publisher link, then visit that site.
-3. Textbooks and Reference Books
+3. Textbooks and Reference Books<br />
    You can get these suggested by a model, but you can verify them on:
    * OpenStax
    * Project Gutenberg
@@ -63,7 +63,7 @@ Without further ado, here are the tips!
    * Real Python
    * GeeksforGeeks
    * W3schools
-5. Government and Academic Research Instritutions
+5. Government and Academic Research Instritutions<br />
    Reputable sites with .gov or .org domains, such as:
    * NASA
    * NOAA
