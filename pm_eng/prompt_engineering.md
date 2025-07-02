@@ -73,4 +73,12 @@ Peer-reviewed journals via:
    * IEEE, ACM, AMS, SIAM, APS, etc. offer trusted publications and learning resources.
    * They often have "student resources" sections.
 
+#### Example Use
+
+Starting Prompt: <br />
+> Tell me about Mandelbrot sets.
+
+Refined Prompt after some Reading: <br />
+> Give me 3 educational sources that explain Mandelbrot sets and show how to draw them in Python. Include information on which parameters affect rendering
+
 
