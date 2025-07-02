@@ -15,7 +15,7 @@ You need to start with an *informed, reasonable question* that you have at least
 4. Test the proposed *solution / insight* to the *issue / body of knowledge*, and once again refine your question. 
 5. Continue this loop of refining and testing your query until the issue is resolved.
 
-We will be going over each step in more detail and providing everyone with an exercise to apply this to.
+~~put something here~~
 
 
 ## Exercise Requirements
@@ -26,3 +26,11 @@ For this activity, you will need a wifi-enabled web browser and access to an LLM
 | OpenAI ChatGPT (GPT-3.5)                  | No account required <br />Cannot reliably browse the web |[Chat GPT](https://chatgpt.com/)|
 | Claude.ai (Claude 3 Haiku)                | Good in-depth reasoning <br />Requires an Account        |[Claude](https://claude.ai/)|
 | Hugging Face Chat (Mistral, Zephyr, etc.) | Flexible options <br />Requires an Account               |[HuggingFace](https://huggingface.co/)|
+
+## Prompt Engineering Tips
+These tips are inspired by OpenAI’s [official prompt engineering](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api) best practices that we have tailored for generating high-complexity Python code to handle simulations, mathematical modeling, and other related fields.<br /> 
+
+To be clear, these tips are **not** just for Python code. They work great in whatever field you are looking towards and are applicable in most - if not all - fields. Our exercises that we will be doing later are simply about graphical Python.<br />
+
+Without further ado, here are the tips!
+
