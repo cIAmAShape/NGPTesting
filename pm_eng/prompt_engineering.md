@@ -17,3 +17,5 @@ You need to start with an *informed, reasonable question* that you have at least
 
 We will be going over each step in more detail and providing everyone with an exercise to apply this to.
 
+
+## Exercise Requirements
