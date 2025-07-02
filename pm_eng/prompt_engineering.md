@@ -35,6 +35,7 @@ To be clear, these tips are **not** just for Python code. They work great in wha
 
 Without further ado, here are the tips!
 
+---
 
 ### 1. Do Your Research
 
@@ -43,6 +44,18 @@ Without further ado, here are the tips!
 **Why It Works:** LLMs (like ChatGPT) can sometimes "hallucinate"—they’ll give confident-sounding answers that may not be factually correct. To avoid being misled, always cross-check important information using **reputable, verifiable sources**. You can use the model to help *find* sources if it can see the internet or has it cached—but then you should verify that those sources are real and trustworthy. <br />
 
 #### Reputable Source Types
+
+1. University Course Websites
+   +Look for .edu domains or syllabi from instutions like MIT OpenCourseWare, Harvard CS, UC Berkeley, etc.
+   +Example: MIT 18.06 Linear Algebra
+2. Scientific Journals & Prepint Servers
+   Peer-reviewed journals via:
+   +
+   +
+   **Tip:** Ask the LLM to find the DOI or publisher link, then visit that site.
+3. Textbooks and Reference Books
+4. Educational Coding Platforms
+5. Government and Academic Research Instritutions
 
 
 
