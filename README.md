@@ -1,15 +1,5 @@
-# IQMTaTesting
-This directory exists purely to troubleshoot issues that NGP students might have, and to test, explain, and help students with certain things.
-
-
-
-## Student-teaching scripts
-> Plotnoise.ipynb -> Teaching students basics of matplotlib noise randomness in trigonmetric waves (graphs sine and cos with noise)
-> 
-> BinomialPractice.ipynb -> Basics of binomial distribution graphing
-
-
-## Student debugging scripts
+# NGPTesting
+This repo is a collection of every code-related activity I did during my time as an NGP TA. This does NOT (currently) include things I made in the google suite (changes to NGP schedule, curriculum, student feasability sheet, etc.) but may be added later. It has all of my hands-on-with-odo challenges, some of the things I wrote for those, and some of the other scripts I wrote when teaching students various basics (such as C, python, bash, etc.)
 
 
 
