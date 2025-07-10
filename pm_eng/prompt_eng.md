@@ -15,7 +15,7 @@ You need to start with an *informed, reasonable question* that you have at least
 4. Test the proposed *solution / insight* to the *issue / body of knowledge*, and once again refine your question. 
 5. Continue this loop of refining and testing your query until the issue is resolved.
 
-~~put something here~~
+It's important to note that these steps can be applied to **any** problem, not just coding. We are just coding here for the sake of practice!
 
 
 ## Exercise Requirements
