@@ -1,0 +1,5 @@
+"Name","Calls","TotalDurationNs","AverageNs","Percentage"
+"column_sums(float const*, float*, unsigned long) [clone .kd]",1,5557183,5557183,83.89169466361021
+"row_sums(float const*, float*, unsigned long) [clone .kd]",1,1041612,1041612,15.724260990136974
+"init_kernel(int) [clone .kd]",1,21120,21120,0.31882926858724064
+"__amd_rocclr_fillBufferAligned.kd",1,4320,4320,0.06521507766557195

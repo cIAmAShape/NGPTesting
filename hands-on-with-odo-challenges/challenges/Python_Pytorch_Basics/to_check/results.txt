@@ -1,0 +1,300 @@
+searching pytorch_cnn-8091.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.82 %
+
+
+searching pytorch_cnn-8092.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.48 %
+
+
+searching pytorch_cnn-8093.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.14 %
+
+
+searching pytorch_cnn-8094.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.87 %
+
+
+searching pytorch_cnn-8095.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.61 %
+
+
+searching pytorch_cnn-8096.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.83 %
+
+
+searching pytorch_cnn-8098.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 67.15 %
+
+
+searching pytorch_cnn-8100.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.4 %
+
+
+searching pytorch_cnn-8101.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.42 %
+
+
+searching pytorch_cnn-8105.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.93 %
+
+
+searching pytorch_cnn-8106.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.14 %
+
+
+searching pytorch_cnn-8107.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.57 %
+
+
+searching pytorch_cnn-8108.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.83 %
+
+
+searching pytorch_cnn-8109.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.52 %
+
+
+searching pytorch_cnn-8110.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.2 %
+
+
+searching pytorch_cnn-8113.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.73 %
+
+
+searching pytorch_cnn-8114.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.64 %
+
+
+searching pytorch_cnn-8115.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.15 %
+
+
+searching pytorch_cnn-8119.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.7 %
+
+
+searching pytorch_cnn-8120.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.63 %
+
+
+searching pytorch_cnn-8121.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.47 %
+
+
+searching pytorch_cnn-8123.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.76 %
+
+
+searching pytorch_cnn-8124.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.24 %
+
+
+searching pytorch_cnn-8125.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.51 %
+
+
+searching pytorch_cnn-8129.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.98 %
+
+
+searching pytorch_cnn-8130.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.7 %
+
+
+searching pytorch_cnn-8131.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.85 %
+
+
+searching pytorch_cnn-8133.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.34 %
+
+
+searching pytorch_cnn-8134.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 62.65 %
+
+
+searching pytorch_cnn-8135.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.41 %
+
+
+searching pytorch_cnn-8136.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.94 %
+
+
+searching pytorch_cnn-8137.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.7 %
+
+
+searching pytorch_cnn-8138.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.44 %
+
+
+searching pytorch_cnn-8139.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.6 %
+
+
+searching pytorch_cnn-8140.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.45 %
+
+
+searching pytorch_cnn-8141.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.02 %
+
+
+searching pytorch_cnn-8142.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.52 %
+
+
+searching pytorch_cnn-8143.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.53 %
+
+
+searching pytorch_cnn-8144.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.68 %
+
+
+searching pytorch_cnn-8145.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.53 %
+
+
+searching pytorch_cnn-8146.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.39 %
+
+
+searching pytorch_cnn-8147.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.83 %
+
+
+searching pytorch_cnn-8148.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.24 %
+
+
+searching pytorch_cnn-8149.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.04 %
+
+
+searching pytorch_cnn-8150.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.16 %
+
+
+searching pytorch_cnn-8151.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.23 %
+
+
+searching pytorch_cnn-8152.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.32 %
+
+
+searching pytorch_cnn-8153.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.15 %
+
+
+searching pytorch_cnn-8154.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.96 %
+
+
+searching pytorch_cnn-8155.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.39 %
+
+
