@@ -1,0 +1,36 @@
+n = 1:
+	time: 5m 37s  (337 s)
+	accuracy: 0.9216
+	time/accuracy ratio: 3.6567 
+
+n = 2:
+	time: 3m 20s  (200 s)
+	accuracy: 0.9286
+	time/accuracy ratio: 2.1538
+
+n = 3:
+	time: 2m 36s  (156 s)
+	accuracy: 0.9216
+	time/accuracy ratio: 1.6927
+
+n = 4:
+	time: 2m 14s  (134 s)
+	accuracy: 0.8718
+	time/accuracy ratio: 1.5370
+
+n = 5:
+	time: 2m 2s  (122 s)
+	accuracy: 0.8839
+	time/accuracy ratio: 1.380
+
+
+
+Past n = 5, the accuracy starts dropping whilst the time improves at an increasingly small (logarithmic) 	
+Thus I did not analyze past n = 5.
+
+Also note, time/accuracy is calculated using the following:
+(minutes*60 + seconds) / (accuracy * 100)
+And is rounded to the 4th decimal point
+
+Using my time/accuracy measurement, it appears that n = 5 has the best ratio of time and accuracy.  However, n = 3 has the best accuracy while only sacrificing an additional ~30 seconds per run.
+

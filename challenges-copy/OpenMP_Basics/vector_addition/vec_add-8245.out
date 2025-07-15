@@ -1,0 +1,5 @@
+Thu Jul 10 02:49:33 PM EDT 2025
+ 
+Error: Element C[0] = 17.000000 instead of 3.0
+srun: error: odo03: task 0: Exited with exit code 1
+srun: Terminating StepId=8245.0

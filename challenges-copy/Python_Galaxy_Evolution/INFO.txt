@@ -1,0 +1,1 @@
+The original .hdf5 file was slightly (.58 MB) too large to include. Not that it matters for this particular challenges, since I couldn't save the results (yet) anyway. 
