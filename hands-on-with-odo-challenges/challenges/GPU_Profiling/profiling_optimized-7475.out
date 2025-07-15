@@ -1,15 +1,0 @@
-RPL: on '250702_151410' from '/opt/rocm-6.2.4' in '/ccsopen/home/csgoethert/hands_on_with_odo/challenges/GPU_Profiling'
-RPL: profiling '"./matrix_sums_optimized"'
-RPL: input file ''
-RPL: output dir '/tmp/rpl_data_250702_151410_3848354'
-RPL: result dir '/tmp/rpl_data_250702_151410_3848354/input_results_250702_151410'
-ROCProfiler: input from "/tmp/rpl_data_250702_151410_3848354/input.xml"
-  0 metrics
-row sums correct!
-column sums correct!
-
-ROCPRofiler: 4 contexts collected, output directory /tmp/rpl_data_250702_151410_3848354/input_results_250702_151410
-File 'metrics_matrix_sums_optimized.csv' is generating
-File 'metrics_matrix_sums_optimized.stats.csv' is generating
-dump json 0:4                                                                                                    dump json 3:4                                                                                                    
-File 'metrics_matrix_sums_optimized.json' is generating

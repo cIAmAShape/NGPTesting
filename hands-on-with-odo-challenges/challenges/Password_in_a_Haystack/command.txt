@@ -1,1 +1,0 @@
-grep "[pP][aA@][sS5][sS5][wW][oO0][rR][dD]" haystack_0*
