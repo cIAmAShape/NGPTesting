@@ -23,10 +23,24 @@ Goodbye, World!
 ```
 This is nice and all, but not very interesting. There is so much more we could be doing with this file.
 
-Let's say, for example, we want to save this information to a file. That's easy! We can use the ">" operator to send the contents to any file(s) of our choice. **But be warned,** as this operator will *overwrite* all of the contents of any file with that name. If we try to send the output of this file to a file titled "**important-data.txt**", then congratulations! We have just overwritten some important data. Hope you have a backup!
+Let's say, for example, we want to save this information to a file. That's easy! We can use the ">" operator to send the contents to any file(s) of our choice. **But be warned,** as this operator will *overwrite* all of the contents of any file with that name. If we try to send the output of this file to an existing file titled "**important-data-do-not-delete.txt**", then congratulations! We have just overwritten some important data. Hope you have a backup!
 
-Now, let's actually try 
+Now, let's actually try to send some data somewhere. As mentioned before, we can redirect the output of hello.sh by doing
+```
+sh hello.sh > output.txt
+```
+Section to be finished later
 
+## Variables
 
-# So, why do we use Bash anyway? When is it used in HPC?
+## Arithmetic
 
+## Comparisons and If/Else
+
+## String Searching
+
+## Loops
+
+## So, why do we use Bash anyway? When is it used in HPC?
+
+## The challenge
