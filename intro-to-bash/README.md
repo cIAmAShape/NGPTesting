@@ -5,10 +5,7 @@ Bash (Bourne-Again SHell) is a command-line interpreter, shell, and scripting la
 Bash is a very helpful language to learn. It provides a very powerful and direct way to communicate with your computer without using a GUI. However, its power is also a weakness: there are no "undo" buttons when moving, removing, copying, or otherwise manipulating files or data. Always write bash scripts with this in mind. 
 
 
-
-
-
-
+## Handling files in Bash
 
 
 
