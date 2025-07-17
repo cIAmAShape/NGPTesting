@@ -2,7 +2,9 @@
 
 Bash (Bourne-Again SHell) is a command-line interpreter, shell, and scripting language used almost ubiquitously across Unix-base and many macOS systems. Much of the function of bash is based around managing an operating system. Created by Brian Fox in around 1988, BASH has since received continuous development [throughout its history](https://developer.ibm.com/tutorials/l-linux-shells/) and to the present. 
 
-Bash is a very helpful language to learn. It provides a very powerful and direct way to communicate with your computer without using a GUI. However, its power is also a weakness: there are no "undo" buttons when moving, removing, copying, or otherwise manipulating files or data. Always write bash scripts with this in mind. This guide will definietly not cover *everything*, as that is impossible to do in a single, small-scale excersize. If you are interested further in more complicated bash topics, the greatest place to start is [the official bash documentation](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html).
+Bash is a very helpful language to learn. It provides a very powerful and direct way to communicate with your computer without using a GUI. However, its power is also a weakness: there are no "undo" buttons when moving, removing, copying, or otherwise manipulating files or data. It is also ***not*** a good "general purpose" language - it lacks advanced data structures, has primative error handling, and its use cases are very limited. Always write bash scripts with this in mind. This guide will definietly not cover *everything*, as that is impossible to do in a single, small-scale excersize. If you are interested further in more complicated bash topics, the greatest place to start is [the official bash documentation](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html).
+
+It is recommended not to learn bash as your first programming "language" - rather, use it as a supplement to another language you already know. Bash (and sh) is a "command-line interpreter and shell" first and a "language" second.  
 
 
 ## The very basics: Handling and printing output
@@ -51,9 +53,29 @@ Note that pipes can be stacked as many times as you want. You can take the outpu
 
 ## Variables, Parameters, and Flags
 
-Variables in bash are quite a bit different than many other programming languages. 
+Variables in bash are quite a bit different than many other programming languages. In general, there are three primary variable types: **Scalar Variables**, **Array Variables**, and **Environment Variables**. 
 
-## Arithmetic
+#### Scalar Variables
+
+Scalar variables are what comes to mind when we think about the most basic variables, such as strings or integers. They hold only *single* values. The format to declare a scalar variable is shown below:
+```
+my_string="This is a string"
+my_num=3
+```
+Notice that *there is **no** whitespace* between the variable name and the value. This is important; with whitespace, bash would (for example) read `my_num = 3` as attempting to run a command named `my_num` with `=` and `3` as *parameters*, not assigning them as a *value* in a variable. 
+#### Array Variables
+
+
+
+#### Environment Variables
+
+
+
+#### Special Variables
+
+
+
+
 
 ## Comparisons, If/Else, and Loops
 
