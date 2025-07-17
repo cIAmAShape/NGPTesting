@@ -2,7 +2,7 @@
 
 Bash (Bourne-Again SHell) is a command-line interpreter, shell, and scripting language used almost ubiquitously across Unix-base and many macOS systems. Much of the function of bash is based around managing an operating system. Created by Brian Fox in around 1988, BASH has since received continuous development [throughout its history](https://developer.ibm.com/tutorials/l-linux-shells/) and to the present. 
 
-Bash is a very helpful language to learn. It provides a very powerful and direct way to communicate with your computer without using a GUI. However, its power is also a weakness: there are no "undo" buttons when moving, removing, copying, or otherwise manipulating files or data. Always write bash scripts with this in mind. 
+Bash is a very helpful language to learn. It provides a very powerful and direct way to communicate with your computer without using a GUI. However, its power is also a weakness: there are no "undo" buttons when moving, removing, copying, or otherwise manipulating files or data. Always write bash scripts with this in mind. This guide will definietly not cover *everything*, as that is impossible to do in a single, small-scale excersize. If you are interested further in more complicated bash topics, the greatest place to start is [the official bash documentation](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html).
 
 
 ## The very basics: Handling and printing output
@@ -40,18 +40,24 @@ If the file output.txt did not exist before, now it does! Taking a look inside o
 ```
 sh hello.sh >> output.txt
 ```
+We have just added to the end of the file. This is especially useful if you, say, need to sort and add data from multiple data files to a centralized file for easy reading. 
 
+There is one last output-manipulation operator which is perhaps the **most important** one to know: the "|" or "pipe" operator. It allows you to take standard ouput *(stdout)* from one bash script/command and use it as standard input *(stdin)* for another. I like to think of it as "sending" the output from once place directly into another. For example, if we wanted to count how many words are printed to the screen when running `hello.sh`, we could "pipe" the printed output into `wc`, a command that counts words: 
+```
+sh hello.sh | wc -w
+#Notice the -w flag. It specifics to wc to count only words and nothing else (it can count lines, bytes, characters, etc.)
+```
+Note that pipes can be stacked as many times as you want. You can take the output from `command1 | command2` and directly pipe it to `command3`, all in one line! `command1 | command2 | command3`. There are (obviously) more commands than just `wc`, of which we will discuss in **String Manipulation**
 
+## Variables, Parameters, and Flags
 
-## Variables and Flags
+Variables in bash are quite a bit different than many other programming languages. 
 
 ## Arithmetic
 
-## Comparisons and If/Else
+## Comparisons, If/Else, and Loops
 
 ## String Manipulation 
-
-## Loops
 
 ## So, why do we use Bash anyway? When is it used in HPC?
 
