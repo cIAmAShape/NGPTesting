@@ -113,21 +113,39 @@ desserts[3]="ice_cream" #Adds item "ice_cream" into slot 3. Since slot does not 
 echo "${desserts[*]}" #cookies cake brownies ice_cream
 unset desserts[0] #Removes item in slot 0, "cookies", from array.
 echo "${desserts[*]}" #cake brownies ice_cream
-```
-**NOTICE**. When using unset on slot 0, all of the items to the right **DO NOT AUTOMATICALLY** shift left to fill the space. This is because bash does not *really* "destroy" the slot for that structure; rather, it sets whatever is at slot 0 to a "null" or "empty string". You can see this more clearly if you run `declare -p desserts` after having removed the 0 slot.
-```
 desserts[0]="popsicles"  #Adds "popsicles" into that slot 0 null character.
 echo "${desserts[*]}" #popsicles cake brownies ice_cream
 ```
-Since that slot has been turned into a null string, we can re-fill it with actual data as we would when adding. Below is a graph of what is *really* happening:
+**NOTICE**. When using unset on slot 0, all of the items to the right **DO NOT AUTOMATICALLY** shift left to fill the space. This is because bash does not *really* "destroy" the slot for that structure; rather, it sets whatever is at slot 0 to a "null" or "empty string". You can see this more clearly if you run `declare -p desserts` after having removed the 0 slot.
+
+Below is a graph of what is *really* happening:
  ![Memory graph of bash](images/bashgraph1.png/)
 
-##### 
+As of bash 4.0 (released in 2009), bash can also handle something called an "associative array", which is an array indexed by keys (strings) instead of numbers. For those of you who are more familiar with languages like C#, Python, or Swift, this acts almost functionally identical to a dictionary. It is also the only variable type that needs to be specifically declared:
+```
+#!/bin/bash
 
+declare -A colors
+colors["red"]="Hex code: FF 00 00"
+colors["blue"]="Hex code: 00 00 FF"
+echo ${colors["red"]}  #Output: "Hex code: FF 00 00"
+```
 
 ### Environment Variables
 
+Environmental variables are fundamental to the Unix/Linux operating system. This is primarily where the concept of bash being a **shell first**, and a **programming language second** - bash's ability to interact with the operating system environment. These special variables give you a lot of power, which requires a lot of care when using them. Here is a multitude of example environment variables. 
+|ENV Var| Variable description|
+|---------|------------------------------------------------------------|
+| $USER   | Gives username of the current user (you, I hope)           |
+| $HOME   | Gives filepath to your home directory                      |
+| $PATH   | Gives your command searchpath                              |
+| $SHELL  | Gives the location of your shell                           |
+| $PWD    | Gives the current working directory you are in             |
+| $EDITOR | Gives information on the default file editor for the shell |
+| $LANG   | Gives the default system language                          |
+| $UID    | Gives the user's user ID (hopefully that's you!)
 
+If you are running this training in Odo, or Frontier, or whatever system that is not your own, I would **be very careful** when messing with these. But it is useful in bash scripting to be able to get information such as your current path, user, etc. If you wish to learn more about creating your own environment variables, [look here](https://www.geeksforgeeks.org/linux-unix/environment-variables-in-linux-unix/).
 
 ### Special Variables and Declerations
 
