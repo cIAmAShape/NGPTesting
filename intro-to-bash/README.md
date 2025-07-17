@@ -24,7 +24,9 @@ Hello World!
 ...
 Goodbye, World!
 ```
-If you take a look at the contents of the file, you will notice it uses the "echo" command to print to the screen. This is not the only way print output - we will discuss more on this in the **strings and string searching** section. 
+If you take a look at the contents of the file, you will notice it uses the "echo" command to print to the screen. This is not the only way print output - we will discuss more on this in the **String Manipulation** section. 
+
+
 
 This is nice and all, but not very interesting. There is so much more we could be doing with this file.
 
@@ -34,16 +36,20 @@ Now, let's actually try to send some output somewhere. As mentioned before, we c
 ```
 sh hello.sh > output.txt
 ```
-If the file output.txt did not exist before, now it does! Taking a look inside
+If the file output.txt did not exist before, now it does! Taking a look inside of that new file will most definietly have the output you are looking for. But say we instead want not to *overwrite* and file, but *add information to the end* of a file? We can do that to, with the concationation ">>" operator:
+```
+sh hello.sh >> output.txt
+```
 
 
-## Variables
+
+## Variables and Flags
 
 ## Arithmetic
 
 ## Comparisons and If/Else
 
-## String Searching
+## String Manipulation 
 
 ## Loops
 
