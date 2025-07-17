@@ -55,7 +55,7 @@ Note that pipes can be stacked as many times as you want. You can take the outpu
 
 Variables in bash are quite a bit different than many other programming languages. In general, there are three primary variable types: **Scalar Variables**, **Array Variables**, and **Environment Variables**. 
 
-#### Scalar Variables
+### Scalar Variables
 
 Scalar variables are what comes to mind when we think about the most basic variables, such as strings or integers. They hold only *single* values. The format to declare a scalar variable is shown below:
 ```
@@ -82,24 +82,35 @@ echo "$my_string123"  #Results in an error, as the variable is not findable.
 echo "$my_string 123"  #Echoes "my_string 123" to screen (with whitespace)
 echo "${my_string}123"  #Echoes "my_string123" to screen
 ```
-#### Array Variables
+You can also "declare" a variable to be a specific type using the `declare --flag` operation, if you wish to fully type your variables. I will not go into fine detail with variable decleration for scalar variables, but if you wish to know more then [this page](https://tldp.org/LDP/abs/html/untyped.html) from **The Linux Documentation Project** has a great exploration of this topic.
+
+
+### Array Variables
+
+In addition to typical scalar variables, bash can also handle 1-dimensional arrays. Since everything including arrays are technically untyped (unless they are declared beforehand), an "array" in bash can feature both strings *and* integers. While one could definietly argue that this would fail the strict definition of an array (I personally would not disagree), remember: **everything is untyped to begin with**. Those "integers" in the array are really just strings.
+
+In general, 
+
+
+### Environment Variables
 
 
 
-#### Environment Variables
-
-
-
-#### Special Variables
+### Special Variables and Declerations
 
  (include the shebang here)
 
 
 
-## Comparisons, If/Else, and Loops
+## Comparisons and If/Else statements
+
+## Loops
 
 ## String Manipulation 
 
 ## So, why do we use Bash anyway? When is it used in HPC?
 
 ## The challenge
+
+## Additional Notes, Reading, and Cheatsheet
+[The Linux Documentation Project](https://tldp.org/)
