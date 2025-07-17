@@ -119,6 +119,10 @@ echo "${desserts[*]}" #cake brownies ice_cream
 desserts[0]="popsicles"  #Adds "popsicles" into that slot 0 null character.
 echo "${desserts[*]}" #popsicles cake brownies ice_cream
 ```
+Since that slot has been turned into a null string, we can re-fill it with actual data as we would when adding. Below is a graph of what is *really* happening:
+ ![Memory graph of bash](images/bashgraph1.png/)
+
+##### 
 
 
 ### Environment Variables
