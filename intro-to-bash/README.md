@@ -82,15 +82,28 @@ echo "$my_string123"  #Results in an error, as the variable is not findable.
 echo "$my_string 123"  #Echoes "my_string 123" to screen (with whitespace)
 echo "${my_string}123"  #Echoes "my_string123" to screen
 ```
+
+
 You can also "declare" a variable to be a specific type using the `declare --flag` operation, if you wish to fully type your variables. I will not go into fine detail with variable decleration for scalar variables, but if you wish to know more then [this page](https://tldp.org/LDP/abs/html/untyped.html) from **The Linux Documentation Project** has a great exploration of this topic.
 
+|flag| Description of flag operation |
+|----|---------------------------------------------------------------------------------------------------|
+| -i | Declare a variables as an integer. Arithmetic expressions inherently handled and evaluated.|
+| -a | Declare as an indexed array. This is assumed if not declared. More on this in **Array Variables** |
+| -A | Declare as an associative array. More on this in **Array Variables**|
+| -r | -r: Declare a variable as read-only, meaning its value cannot be changed.|
+| -x | -x: Mark a variable for export to the environment. More on this in **Environment Variables**|
+| -p | -p: Print the attributes and value of each variable. Used for checking variable types|
 
 ### Array Variables
 
 In addition to typical scalar variables, bash can also handle 1-dimensional arrays. Since everything including arrays are technically untyped (unless they are declared beforehand), an "array" in bash can feature both strings *and* integers. While one could definietly argue that this would fail the strict definition of an array (I personally would not disagree), remember: **everything is untyped to begin with**. Those "integers" in the array are really just strings.
 
-In general, 
-
+Arrays as variables are typically declared using the following format:
+```
+my_array=(data1 data2 data3 data4)  #Space between data points,
+```
+If not explicitly declared using a `declare` operator (like in the example above), bash assume the array is an indexed array. Much like 
 
 ### Environment Variables
 
@@ -107,6 +120,8 @@ In general,
 ## Loops
 
 ## String Manipulation 
+
+## Functions
 
 ## So, why do we use Bash anyway? When is it used in HPC?
 
