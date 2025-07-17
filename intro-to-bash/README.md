@@ -86,14 +86,14 @@ echo "${my_string}123"  #Echoes "my_string123" to screen
 
 You can also "declare" a variable to be a specific type using the `declare --flag` operation, if you wish to fully type your variables. I will not go into fine detail with variable decleration for scalar variables, but if you wish to know more then [this page](https://tldp.org/LDP/abs/html/untyped.html) from **The Linux Documentation Project** has a great exploration of this topic.
 
-|flag| Description of flag operation |
+|Flag| Description of flag operation |
 |----|---------------------------------------------------------------------------------------------------|
-| -i | Declare a variables as an integer. Arithmetic expressions inherently handled and evaluated.|
+| -i | Declare as an integer. Arithmetic expressions inherently handled and evaluated.|
 | -a | Declare as an indexed array. This is assumed if not declared. More on this in **Array Variables** |
 | -A | Declare as an associative array. More on this in **Array Variables**|
-| -r | -r: Declare a variable as read-only, meaning its value cannot be changed.|
-| -x | -x: Mark a variable for export to the environment. More on this in **Environment Variables**|
-| -p | -p: Print the attributes and value of each variable. Used for checking variable types|
+| -r | Declare as read-only, meaning its value cannot be changed.|
+| -x | Mark a variable for export to the environment. More on this in **Environment Variables**|
+| -p | Print the attributes and value of each variable. Useful for checking variable types|
 
 ### Array Variables
 
@@ -101,9 +101,25 @@ In addition to typical scalar variables, bash can also handle 1-dimensional arra
 
 Arrays as variables are typically declared using the following format:
 ```
-my_array=(data1 data2 data3 data4)  #Space between data points,
+my_array=(data1 data2 data3 data4)  #Space between data points instead of commas, using paranthesis instead of closed brackets.
 ```
-If not explicitly declared using a `declare` operator (like in the example above), bash assume the array is an indexed array. Much like 
+If not explicitly declared using a `declare` operator (like in the example above), bash assume the array is an indexed array. Much like other languages, indexing in bash starts from 0 and goes to N-1 (with N being the length of your array). Unlike other languages, you don't need to specify the array size to add things through indexing. To add an item at index 2, simply write `my_array[n]=<item>`. To delete an item, use `unset my_array[n]`
+```
+#!/bin/bash
+
+desserts=("cookies" "cake" "brownies")
+echo "${desserts[*]}"  #caookies cake brownies
+desserts[3]="ice_cream" #Adds item "ice_cream" into slot 3. Since slot does not exist, it creates the new slot
+echo "${desserts[*]}" #cookies cake brownies ice_cream
+unset desserts[0] #Removes item in slot 0, "cookies", from array.
+echo "${desserts[*]}" #cake brownies ice_cream
+```
+**NOTICE**. When using unset on slot 0, all of the items to the right **DO NOT AUTOMATICALLY** shift left to fill the space. This is because bash does not *really* "destroy" the slot for that structure; rather, it sets whatever is at slot 0 to a "null" or "empty string". You can see this more clearly if you run `declare -p desserts` after having removed the 0 slot.
+```
+desserts[0]="popsicles"  #Adds "popsicles" into that slot 0 null character.
+echo "${desserts[*]}" #popsicles cake brownies ice_cream
+```
+
 
 ### Environment Variables
 
