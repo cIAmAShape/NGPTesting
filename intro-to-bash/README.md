@@ -59,12 +59,29 @@ Variables in bash are quite a bit different than many other programming language
 
 Scalar variables are what comes to mind when we think about the most basic variables, such as strings or integers. They hold only *single* values. The format to declare a scalar variable is shown below:
 ```
+#!/bin/bash
+
 my_string="This is a string"
 my_num=3
 ```
 Notice that *there is **no** whitespace* between the variable name and the value. This is important; with whitespace, bash would (for example) read `my_num = 3` as attempting to run a command named `my_num` with `=` and `3` as *parameters*, not assigning them as a *value* in a variable. 
+
 This is also a good time to mention variable types. In bash all variables are generally *untyped* unless declared explicitly. In the example above, the system actually treats `my_num` as a string, not an integer. This can be especially annoying when we need to perform arithmetic on a variable. Bash also *does not* natively support floats. More on this in the **Arithmetic** section.
 
+To refrence a variable at any part in your code, use the `$` symbol in combination with a *brace* `{}` to keep the variable "encapsulated", like so: . 
+```
+#!/bin/bash
+
+my_string="This is a string"
+my_num=3
+echo "My string is ${my_string} and my number is ${my_num}"
+```
+Note that encapsulation is not strictly neccesary, but highly recommended. Without it, bash will attempt to read all characters past the `$` symbol (excluding spaces) as the name of the variable. So if you do not have whitespace between where you are trying to print the variable and the next part of the string, it will fail.
+```
+echo "$my_string123"  #Results in an error, as the variable is not findable. 
+echo "$my_string 123"  #Echoes "my_string 123" to screen (with whitespace)
+echo "${my_string}123"  #Echoes "my_string123" to screen
+```
 #### Array Variables
 
 
@@ -75,7 +92,7 @@ This is also a good time to mention variable types. In bash all variables are ge
 
 #### Special Variables
 
-
+ (include the shebang here)
 
 
 
