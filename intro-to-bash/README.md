@@ -256,13 +256,40 @@ The `-l` flag calls for the **bc library**, which has all kinds of basic math fr
 
 ## String Manipulation 
 
+Perhaps one of bash's strongest utilities is its ability to manipulate, match, search, and otherwise manipulate strings. 
+
 ## Comparisons and If/Else statements
 
+placeholder text
+
+### Comparisons
 
 
-### Comprisons
+Given the long evolutionary history of bash as a shell that has evolved greatly over time, there are technically three primary syntaxes for comparing values, being single-brackets `[]`, double brackets `[[]]`, and double paranthesis `(())`. While each can be used for different things, we will primarily be focusing on double-bracket syntax as it is the newest and most robust. In general, the format for comparisons is `[[ <item1> -<compare operator> <item2> ]]`. **Notice** the spaces that seperate each argument; *these are important for how bash interprets the comparison*. 
+
+Below are the many comparisons bash is capable of doing:
+
+| Operator | Description                    | Example                |
+|----------|--------------------------------|------------------------|
+| `-eq`    | Equal to                       | `[[ $a -eq $b ]]`     |
+| `-ne`    | Not equal to                  | `[[ $a -ne $b ]]`     |
+| `-lt`    | Less than                     | `[[ $a -lt $b ]]`     |
+| `-le`    | Less than or equal to         | `[[ $a -le $b ]]`     |
+| `-gt`    | Greater than                  | `[[ $a -gt $b ]]`     |
+| `-ge`    | Greater than or equal to      | `[[ $a -ge $b ]]`     |
+| `==`      | Equal to                                    | `[[ $str1 == $str2 ]]`  |
+| `!=`      | Not equal to                                | `[[ $str1 != $str2 ]]`  |
+| `<`       | Lexicographically less than                 | `[[ $str1 < $str2 ]]`   |
+| `>`       | Lexicographically greater than               | `[[ $str1 > $str2 ]]`   |
+| `=~`      | Matches a string against a regex           | `[[ $str =~ regex ]]`   |
+| `-n`      | Checks if the string is non-empty           | `[[ -n $str ]]`         |
+| `-z`      | Checks if the string is empty               | `[[ -z $str ]]`         |
+| `&&`     | Logical AND                         | `[[ condition1 && condition2 ]]`  |
+| `!`      | Logical NOT                         | `[[ ! condition ]]`                | 
+FIX OR || LATER
 
 
+These can, of course, be used in tandem with some of the pattern matching techniques we looked at in **String Manipulation**.  
 
 ### If/Else
 
