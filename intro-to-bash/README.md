@@ -151,7 +151,7 @@ If you are running this training in Odo, or Frontier, or whatever system that is
 
 ### Special Variables and Declerations
 
- (include the shebang here)
+If you have been paying attention to the last few code snippits, you might have noticed that each has begun with the line `#!/bin/bsh`. This is not a comment, but something called a *shebang* line. The `#!` at the beginning indicates to the shell that the following path (in this case, `/bin/bash`) leads to the interpreter *from which the code is executed*. This is **not** always neccesary; explicitly calling bash to run the script `bash script.sh` can render the shebang uneeded. However, it is **highly recommended** to include this at the start of *each and every bash script you write*.   
 
 
 
