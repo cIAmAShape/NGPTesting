@@ -177,6 +177,8 @@ I would highly advise you make and mess around with your own variables to get th
  
 ## Comparisons and If/Else statements
 
+
+
 ## Loops
 
 ## String Manipulation 
