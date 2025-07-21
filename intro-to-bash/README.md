@@ -177,7 +177,7 @@ I would highly advise you make and mess around with your own variables to get th
  
 ## Arithmetic
 
-Arithmetic in bash is a bit... strange. Since every variable is treated as an untyped string, we need to use a different set of operations and syntax to properly do math. It becomes especially tricky once we start to assign numbers to variables. There are a multitude of ways to go about performing mathematical operations in bash, but this guide focuses on three: `$((<op>))` syntax, `let` command, and `bc` command.
+Arithmetic in bash is a bit... strange. Since every variable is treated as an untyped string, we need to use a different set of operations and syntax to properly do math. It becomes especially tricky once we start to assign numbers to variables. There are a multitude of ways to go about performing mathematical operations in bash, but this guide focuses on two: `$((<op>))` syntax for integer arithmetic and the `bc` command for floating-point numbers. 
 
 ### `$((<op>))` syntax
 
@@ -206,7 +206,7 @@ abc
 echo "$((c+3))"  #Attempts to treat c as an integer. Since is is a string, the integer value it assigns is 0.
 3
 ```
-Bash is capable of doing most basic arithmetic out there. But since it does not handle floating-points natively, **any** division result will cut off decimal-place answers. For example, `echo "$((10 / 4))"` would return `2` and drop the `.5` decimal at the end. Below is the proper syntax for all arithmetic done in this way:\
+Bash is capable of doing most basic arithmetic out there. But since it does not handle floating-points natively, **any** division result will cut off decimal-place answers. For example, `echo "$((10 / 4))"` would return `2` and drop the `.5` decimal at the end. Below is the proper syntax for all arithmetic done in this way:
 
 | Syntax      | Effect                                               |
 |-------------|------------------------------------------------------|
@@ -216,21 +216,27 @@ Bash is capable of doing most basic arithmetic out there. But since it does not 
 | $((a / b))  | Division                                             |
 | $((a ** b)  | Exponential                                          |
 | $((a % b)) | Modulo Division                                      |
-| a=$((a += b)) | Incrementation by constant                                   |
-| a=$((a -= b)) | Decrementation by constant                                  |
-| a=$((a *= b)) | Multiply by constant                                    |
-| a=$((a /= b)) | Divide by constant                                     |
-| a=$((a %= b) | Modulo by constant                                      |
+| a=$((a += b)) | Incrementation by constant|
+| a=$((a -= b)) | Decrementation by constant|
+| a=$((a *= b)) | Multiply by constant|
+| a=$((a /= b)) | Divide by constant|
+| a=$((a %= b) | Modulo by constant|
 
-### `let` command
+Of course, this is not the only way to do integer arithmetic in bash. Using the `let` or `expr` commands is valid depending on their context. But I am focusing on this form because it is generally the preffered and most efficent method in most use-cases. You are free to use whatever your project might call for. 
 
 ### `bc` command
+
+For handling actual floating-point numbers and more complicated math, you can use the `bc` library. It is important to note that `bc` (or basic calculator, as it is called) is **not** a built-in part of the bash shell; rather, it is a seperate command-line utility written in C (as all good things are) that comes pre-packaged in most, *but not all*, linux distributions. Depending on what version of Linux/macOS version you are running, you might have to install it manually to use it. **This is because native bash has *no* handling of floating-points.**
+
+Because it is not a built-in 
+
+More on what the bc package can do can be found [here](https://www.geeksforgeeks.org/linux-unix/bc-command-linux-examples/).
+
+## String Manipulation 
 
 ## Comparisons and If/Else statements
 
 ## Loops
-
-## String Manipulation 
 
 ## Functions
 
