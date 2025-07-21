@@ -131,6 +131,8 @@ colors["blue"]="Hex code: 00 00 FF"
 echo ${colors["red"]}  #Output: "Hex code: FF 00 00"
 ```
 
+Be warned when using associative arrays. Since bash places great emphasis on *backwards compatiblility*, these arrays will **not** work on older systems. In the case that you need these kind of structures in an older system, you will need to find a way to find a work around. In addition, bash arrays are not designed to work well for large datasets - they are stored in memory, their operations get slower as the size of the array increases, and they generally don't scale well. It is best to save bash arrays for little tasks.  
+
 ### Environment Variables
 
 Environmental variables are fundamental to the Unix/Linux operating system. This is primarily where the concept of bash being a **shell first**, and a **programming language second** - bash's ability to interact with the operating system environment. These special variables give you a lot of power, which requires a lot of care when using them. Here is a multitude of example environment variables. 
