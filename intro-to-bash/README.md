@@ -177,7 +177,54 @@ I would highly advise you make and mess around with your own variables to get th
  
 ## Arithmetic
 
-Arithmetic in bash is a bit... strange. Since every variable is treated as an untyped string, we need to use a different set of operations and syntax to properly do math. It becomes especially tricky once we start to assign numbers to variables. 
+Arithmetic in bash is a bit... strange. Since every variable is treated as an untyped string, we need to use a different set of operations and syntax to properly do math. It becomes especially tricky once we start to assign numbers to variables. There are a multitude of ways to go about performing mathematical operations in bash, but this guide focuses on three: `$((<op>))` syntax, `let` command, and `bc` command.
+
+### `$((<op>))` syntax
+
+Remember earlier in this guide that taught you how to "encapsulate" string variables to keep them clean and readable? This is why. Similar to how you would use `${}` syntax to mark a variable in a string, you can use `$(())` to mark a section as peforming mathematical operations. Let's look at the example below from file arithmetic/math1.sh:
+```
+#!/bin/bash
+
+#!/bin/bash
+
+a=14
+b=2
+c="abc"
+
+echo a + b   #a and b are not refrenced
+a + b
+echo $a + $b   #a and b are refrenced, but not added
+14 + 2
+echo "$((a + b))"  #a and b are refrenced, encapuslated in arithmetic, and computed
+16
+echo "$((a * b))"
+24
+echo "$(((a - b) / 2))"  #The rules of PEDMAS still apply. This is how you handle paranthesis.
+6
+echo $c
+abc
+echo "$((c+3))"  #Attempts to treat c as an integer. Since is is a string, the integer value it assigns is 0.
+3
+```
+Bash is capable of doing most basic arithmetic out there. But since it does not handle floating-points natively, **any** division result will cut off decimal-place answers. For example, `echo "$((10 / 4))"` would return `2` and drop the `.5` decimal at the end. Below is the proper syntax for all arithmetic done in this way:\
+
+| Syntax      | Effect                                               |
+|-------------|------------------------------------------------------|
+| $((a + b))  | Addition                                             |
+| $((a - b))  | Subtraction                                          |
+| $(a * b)    | Multiplication                                       |
+| $((a / b))  | Division                                             |
+| $((a ** b)  | Exponential                                          |
+| $((a % b)) | Modulo Division                                      |
+| a=$((a += b)) | Incrementation by constant                                   |
+| a=$((a -= b)) | Decrementation by constant                                  |
+| a=$((a *= b)) | Multiply by constant                                    |
+| a=$((a /= b)) | Divide by constant                                     |
+| a=$((a %= b) | Modulo by constant                                      |
+
+### `let` command
+
+### `bc` command
 
 ## Comparisons and If/Else statements
 
