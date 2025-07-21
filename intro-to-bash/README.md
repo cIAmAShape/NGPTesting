@@ -149,12 +149,32 @@ Environmental variables are fundamental to the Unix/Linux operating system. This
 
 If you are running this training in Odo, or Frontier, or whatever system that is not your own, I would **be very careful** when messing with these. But it is useful in bash scripting to be able to get information such as your current path, user, etc. If you wish to learn more about creating your own environment variables, [look here](https://www.geeksforgeeks.org/linux-unix/environment-variables-in-linux-unix/).
 
-### Special Variables and Declerations
+### Special Variables
 
-If you have been paying attention to the last few code snippits, you might have noticed that each has begun with the line `#!/bin/bsh`. This is not a comment, but something called a *shebang* line. The `#!` at the beginning indicates to the shell that the following path (in this case, `/bin/bash`) leads to the interpreter *from which the code is executed*. This is **not** always neccesary; explicitly calling bash to run the script `bash script.sh` can render the shebang uneeded. However, it is **highly recommended** to include this at the start of *each and every bash script you write*.   
+If you have been paying attention to the last few code snippits, you might have noticed that each has begun with the line `#!/bin/bash`. This is not a comment, but something called a *shebang* line. The `#!` at the beginning indicates to the shell that the following path (in this case, `/bin/bash`) leads to the interpreter *from which the code is executed*. This is **not** always neccesary; explicitly calling bash to run the script `bash script.sh` can render the shebang uneeded. However, it is **highly recommended** to include this at the start of *each and every bash script you write*.   
 
+There are also special variables that allow you to send *arguments*. This is great for a good number of reasons, from creating *option flags* for your scripts to *sending specific files* that you want the script to interact with. Below is a list of a few of these special variables:
 
+| Special Var. | Action |
+|----------------|-----------------------------------------------------------------------------------------|
+| $0             | References the name of the script                                                       |
+| $1, $2, .., $N | References the parameters up to N after the script, $1 being the first after the script |
+| $#             | References the number of parameters sent                                                |
+| $@             | Gets all parameters as seperate strings                                                 |
+| $*             | Gets all parameters as a singular, combined string                                      |
+| $?             | Gets the exit status of the last executed command                                       |
+| $$             | Gets the PID (Process ID) of the current script / shell                                 |
+| $!             | Gets the PID of the last-executed background command                                    |
 
+The last three are especially useful for debugging. If you wish to see an example of how filenames can be sent as arguments, do the following:
+
+```
+$ cd variables  #Make sure you are in the variables subdirectory for this
+$ sh arguments.sh <file-you-want-read>.txt  #The filename is sent as $1 
+```
+
+I would highly advise you make and mess around with your own variables to get the hang of it. The best way to learn bash **by far** is to practice using it. We will be going more in-detail about writing option flags for your bash scripts as a practice exercise for our **loops** section.
+ 
 ## Comparisons and If/Else statements
 
 ## Loops
