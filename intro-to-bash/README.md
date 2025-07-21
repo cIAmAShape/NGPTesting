@@ -188,4 +188,11 @@ I would highly advise you make and mess around with your own variables to get th
 ## The challenge
 
 ## Additional Notes, Reading, and Cheatsheet
-[The Linux Documentation Project](https://tldp.org/)
+
+Here is a list of very good resources to use for people interested in bash scripting
+> [The Linux Documentation Project](https://tldp.org/)
+> [Medium blog on bash flag handling](https://medium.com/@wujido20/handling-flags-in-bash-scripts-4b06b4d0ed04)
+> [W3schools intro to bash scripting](https://www.w3schools.com/bash/bash_script.php)
+> [GeeksforGeeks intro to bash](https://www.geeksforgeeks.org/linux-unix/bash-scripting-introduction-to-bash-and-bash-scripting/)
+
+**Disclaimer:** This guide was written by somebody who only really has ~1.5 years of bash scripting and is nowhere being an "expert" in the subject. The guide itself was heavily inspiried by *The Linux Documentation Project*'s introductory explorations as well as a lot of things the author wish they knew / were taught when starting out. 
