@@ -175,9 +175,11 @@ $ sh arguments.sh <file-you-want-read>.txt  #The filename is sent as $1
 
 I would highly advise you make and mess around with your own variables to get the hang of it. The best way to learn bash **by far** is to practice using it. We will be going more in-detail about writing option flags for your bash scripts as a practice exercise for our **loops** section.
  
+## Arithmetic
+
+Arithmetic in bash is a bit... strange. Since every variable is treated as an untyped string, we need to use a different set of operations and syntax to properly do math. It becomes especially tricky once we start to assign numbers to variables. 
+
 ## Comparisons and If/Else statements
-
-
 
 ## Loops
 
