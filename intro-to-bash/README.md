@@ -228,13 +228,52 @@ Of course, this is not the only way to do integer arithmetic in bash. Using the 
 
 For handling actual floating-point numbers and more complicated math, you can use the `bc` library. It is important to note that `bc` (or basic calculator, as it is called) is **not** a built-in part of the bash shell; rather, it is a seperate command-line utility written in C (as all good things are) that comes pre-packaged in most, *but not all*, linux distributions. Depending on what version of Linux/macOS version you are running, you might have to install it manually to use it. **This is because native bash has *no* handling of floating-points.**
 
-Because it is not a built-in 
+Because it is not a built-in package, you actually have to *pipe* your mathematical equation to the `bc` operator. 
+```
+#!/bin/bash
 
-More on what the bc package can do can be found [here](https://www.geeksforgeeks.org/linux-unix/bc-command-linux-examples/).
+a=10
+b=3
+c=2.3
+
+echo "scale=2; $a / $b" | bc  #MUST use the referal of variables with $ to refer to their values here. Notice the | pipe operator.
+#3.33
+echo "scale=3; $a / $b" | bc  #More accuracy than previous
+#3.333
+echo "scale=1; $a + $c" | bc  #Will read $c as a float
+#12.3
+
+echo "scale=4; s(1.571)" | bc -l  #Sine of ~(pi / 2)
+#1.0000
+echo "scale=4; l(e(2))" | bc -l  #Natural log of e^2
+#1.9999
+
+
+echo "scale=3; ($a / $b) + $c" | bc  #Example of compound equation with floats
+#5.633
+```
+The `-l` flag calls for the **bc library**, which has all kinds of basic math from trigonometry to natural logs. *But remember*, bc is NOT a part of bash and thereby may NOT have the same backwards-compability typically found in bash scripts. More on what the bc -l package can do can be found [here](https://www.geeksforgeeks.org/linux-unix/bc-command-linux-examples/).
 
 ## String Manipulation 
 
 ## Comparisons and If/Else statements
+
+
+
+### Comprisons
+
+
+
+### If/Else
+
+
+
+### If/Elif/Else
+
+
+### Case
+
+
 
 ## Loops
 
