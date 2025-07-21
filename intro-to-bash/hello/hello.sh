@@ -1,8 +1,12 @@
 #!/bin/bash
 
 
-echo "Hello World!"
-echo "Greetings, World!"
-echo "Good day, Earth!"
+echo "Hello, World!"
+echo "..."
+echo "..."
+echo "..."
+echo "..."
+echo "..."
+echo "Goodbye, World!"
 
 
