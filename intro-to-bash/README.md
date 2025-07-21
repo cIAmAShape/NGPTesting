@@ -192,19 +192,19 @@ b=2
 c="abc"
 
 echo a + b   #a and b are not refrenced
-a + b
+#a + b
 echo $a + $b   #a and b are refrenced, but not added
-14 + 2
+#14 + 2
 echo "$((a + b))"  #a and b are refrenced, encapuslated in arithmetic, and computed
-16
+#16
 echo "$((a * b))"
-24
+#24
 echo "$(((a - b) / 2))"  #The rules of PEDMAS still apply. This is how you handle paranthesis.
-6
+#6
 echo $c
-abc
+#abc
 echo "$((c+3))"  #Attempts to treat c as an integer. Since is is a string, the integer value it assigns is 0.
-3
+#3
 ```
 Bash is capable of doing most basic arithmetic out there. But since it does not handle floating-points natively, **any** division result will cut off decimal-place answers. For example, `echo "$((10 / 4))"` would return `2` and drop the `.5` decimal at the end. Below is the proper syntax for all arithmetic done in this way:
 
