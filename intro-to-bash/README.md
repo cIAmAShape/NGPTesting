@@ -293,13 +293,49 @@ These use cases are typically reserved for using command-line level bash and not
 
 If/Else and If/Elif statements in bash work the same as any other programming language would, with some syntax difference. Here is the main structure for both:
 
+![Left: If/Else || Right: If/Elif/Else](images/if_statement_structure.png)
 
+Todo: label image
 
-The main and recurring syntax for these blocks is the use of **start** and **stop** indicators; for `if/else` and `if/elif/else` statements, these are `then` and `fi` (Notice that `fi` is the word `if` spelled backwards!). They indicate to the bash interpreter when the block begins and ends. 
+The main and recurring syntax for these blocks in bash is the use of **start** and **stop** indicators; for `if/else` and `if/elif/else` statements, these are `then` and `fi` (Notice that `fi` is the word `if` spelled backwards!). They indicate to the bash interpreter when the block begins and ends. You will also need to use a semicolon to place a distinction between the *start* command at the *condition / comparison*. While indentation is not strictly neccesary for the `if` block, it helps with readability.
 
+Now, let's look at `comparisons/ex1.sh`, a brief and simple number comparison example:
 
+```
+#!/bin/bash
 
+read -p "Enter a number: " my_num  #Reads input
 
+if [[ $my_num -gt 10 ]]; then  #Notice the ; seperating the comparison/condition from start clause "then"
+        echo "Your number is greater than 10."
+else
+        echo "Your number is NOT greater than 10."
+fi  #Ends with end clause "fi"
+```
+
+This simple bash script reads an input as a number and attempts to check its value. There is no error handling on this, so entering a non-number character will result in a syntax error followed by treating the variable my_num to as integer value 0 (as per bash integer rules).
+
+Let's take a look at another example, this time with a few *nested* elif statements as well: 
+
+```
+#!/bin/bash
+
+read -p "Enter a number: " n
+
+if [[ $n -lt 3 ]]; then
+        echo "My number is less than 3"
+elif [[ $n -eq 4 ]]; then
+        echo "My number is 4"
+elif [[ $n -eq 5 ]]; then
+        echo "My number is 5"
+elif [[ $n -ge 6 ]]; then
+        echo "My number is 6 or greater"
+else
+        echo "My number is 3."
+fi
+```
+
+Notice how the `else` statements is for handling if the number is 3. In this case, the code will run through all of the if/elif statements until it reaches the end. This is mostly to demonstrate behavior of the if/elif/else structure. As with anything, the best way to learn these is to practice writing them yourself. 
 
 ## String Manipulation 
 
