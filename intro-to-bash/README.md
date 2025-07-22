@@ -254,7 +254,7 @@ echo "scale=3; ($a / $b) + $c" | bc  #Example of compound equation with floats
 ```
 The `-l` flag calls for the **bc library**, which has all kinds of basic math from trigonometry to natural logs. *But remember*, bc is NOT a part of bash and thereby may NOT have the same backwards-compability typically found in bash scripts. More on what the bc -l package can do can be found [here](https://www.geeksforgeeks.org/linux-unix/bc-command-linux-examples/).
 
-### Comparisons
+## Comparisons
 
 
 Given the long evolutionary history of bash as a shell that has evolved greatly over time, there are technically three primary syntaxes for comparing values, being single-brackets `[]`, double brackets `[[]]`, and double paranthesis `(())`. While each can be used for different things, we will primarily be focusing on double-bracket syntax as it is the newest and most robust. In general, the format for comparisons is `[[ <item1> -<compare operator> <item2> ]]`. **Notice** the spaces that seperate each argument; *these are important for how bash interprets the comparison*. 
