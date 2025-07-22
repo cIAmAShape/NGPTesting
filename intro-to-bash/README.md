@@ -277,19 +277,13 @@ Below are the many comparisons bash is capable of doing:
 | `-le`    | Less than or equal to         | `[[ $a -le $b ]]`     |
 | `-gt`    | Greater than                  | `[[ $a -gt $b ]]`     |
 | `-ge`    | Greater than or equal to      | `[[ $a -ge $b ]]`     |
-| `==`      | Equal to                                    | `[[ $str1 == $str2 ]]`  |
-| `!=`      | Not equal to                                | `[[ $str1 != $str2 ]]`  |
-| `<`       | Lexicographically less than                 | `[[ $str1 < $str2 ]]`   |
-| `>`       | Lexicographically greater than               | `[[ $str1 > $str2 ]]`   |
-| `=~`      | Matches a string against a regex           | `[[ $str =~ regex ]]`   |
-| `-n`      | Checks if the string is non-empty           | `[[ -n $str ]]`         |
-| `-z`      | Checks if the string is empty               | `[[ -z $str ]]`         |
 | `&&`     | Logical AND                         | `[[ condition1 && condition2 ]]`  |
 | `!`      | Logical NOT                         | `[[ ! condition ]]`                | 
-FIX OR || LATER
+| /`|/|`| Logical OR for | `[[ condition1 /|/| condition2 ]]` |
 
+These can, of course, be used in tandem with some of the pattern matching techniques we looked at in **String Manipulation**. In fact, there are a fe 
 
-These can, of course, be used in tandem with some of the pattern matching techniques we looked at in **String Manipulation**.  
+Since everything is untyped and treated as a string in bash, there is no "Boolean" variable type. Instead, we have the `true` and `false` **commands**, which return either a 0 for `true` (indicating that the command *exited succesfully*) or nonzero numbers for `false` (usually 1, indicating that the success did *not exit succesfully*). This can be really confusing 
 
 ### If/Else
 
