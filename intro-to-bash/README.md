@@ -254,10 +254,6 @@ echo "scale=3; ($a / $b) + $c" | bc  #Example of compound equation with floats
 ```
 The `-l` flag calls for the **bc library**, which has all kinds of basic math from trigonometry to natural logs. *But remember*, bc is NOT a part of bash and thereby may NOT have the same backwards-compability typically found in bash scripts. More on what the bc -l package can do can be found [here](https://www.geeksforgeeks.org/linux-unix/bc-command-linux-examples/).
 
-## String Manipulation 
-
-Perhaps one of bash's strongest utilities is its ability to manipulate, match, search, and otherwise manipulate strings. 
-
 ## Comparisons and If/Else statements
 
 placeholder text
@@ -281,9 +277,7 @@ Below are the many comparisons bash is capable of doing:
 | `!`      | Logical NOT                         | `[[ ! condition ]]`                | 
 | /`|/|`| Logical OR for | `[[ condition1 /|/| condition2 ]]` |
 
-These can, of course, be used in tandem with some of the pattern matching techniques we looked at in **String Manipulation**. In fact, there are a fe 
-
-Since everything is untyped and treated as a string in bash, there is no "Boolean" variable type. Instead, we have the `true` and `false` **commands**, which return either a 0 for `true` (indicating that the command *exited succesfully*) or nonzero numbers for `false` (usually 1, indicating that the success did *not exit succesfully*). This can be really confusing 
+Since everything is untyped and treated as a string in bash, there is no "Boolean" variable type. Instead, we have the `true` and `false` **commands**, which return either a 0 for `true` (indicating that the command *exited succesfully*) or nonzero numbers for `false` (usually 1, indicating that the success did *not exit succesfully*). You can set variables equal to these commands, and they will typically function like a typical 
 
 ### If/Else
 
@@ -292,7 +286,29 @@ Since everything is untyped and treated as a string in bash, there is no "Boolea
 ### If/Elif/Else
 
 
+
+
+
+## String Manipulation 
+
+Perhaps one of bash's strongest utilities is its ability to manipulate, match, search, and otherwise manipulate strings. YES COMPARISONS, Include them!
+
 ### Case
+
+
+
+### Pattern Matching 
+
+Comparisons are also great for matching string patterns.  
+
+| Operator | Description                    | Example                |
+|----------|--------------------------------|------------------------|
+| `!=`      | Not equal to                                | `[[ $str1 != $str2 ]]`  |
+| `<`       | Lexicographically less than                 | `[[ $str1 < $str2 ]]`   |
+| `>`       | Lexicographically greater than               | `[[ $str1 > $str2 ]]`   |
+| `=~`      | Matches a string against a regex           | `[[ $str =~ regex ]]`   |
+| `-n`      | Checks if the string is non-empty           | `[[ -n $str ]]`         |
+| `-z`      | Checks if the string is empty               | `[[ -z $str ]]`         |
 
 
 
