@@ -351,7 +351,7 @@ echo ${str1: -6}  #They can even be indexed from the end!
 str2="mSD90sfmjo"
 echo ${#str2}  #Gets the length of the string
 
-str3="I dont like bash. I dont like linux."
+str3="I dont like bash. I dont really like bash."
 echo ${str3/dont/really}  #Local replacement (replaces first instance)
 echo ${str3//dont/really}  #Global replacement (replaces ALL instances)
 
@@ -361,18 +361,44 @@ echo ${str4%%are*}  #Cuts off all string past (and including) substring "are"
 
 You may have noticed that for printing strings to screen, we have been using the `echo` command. Bash does actually have another method called `printf`, which *differs in usage*. In general, `echo` always appends a newline to the end of each print string it prints and is used mostly for simplier print tasks (as it lacks many of the robust formatters found in `printf`). On the other hand, `printf` does **not** append a newline at the end of each printed string. It leaves all forms of formatting up to the coder and is *much more robust* for formatting complicated prints. Some examples of how to use `printf` can be found [here](https://linuxconfig.org/bash-printf-syntax-basics-with-examples).  
 
+TODO: Basics OR and AND string searching (grep/regex)
 
+### Case-Esac
 
+Similar to the if/else block, bash also has a `case` statement. This is similar to a `switch` statement found in C, C++, and other compilied language (the Python equivalent is the `match-case` statement). It is great for handling pattern-based cases for specific scenarios. Unlike the if/else block in bash, each case is seperated by *two semicolons (;;)*. 
 
-You can read more about the powers of grep and regex [here](https://computing.stat.berkeley.edu/tutorial-using-bash/regex.html). 
+Let's take a look at this example code '05-string-manipulation/'which asks the user for a number and returns information on the program's "favorite number"
 
-### Case
+```
+#!/bin/bash
+read -p "Enter a score (0-100): " score
+case $score in
+        [9][0-9]|100) #) Marks the beginning of a case-output. This is what you do once case [9][0-9]|100 is reached.
+                echo "Grade: A"
+                ;;  #Notice the double ;; marking the end of a case-output
+        [8][0-9])  #[] indicates an "or" range. More information on this in the link below in section "Pattern Matching"
+                echo "Grade: B"
+                ;;
+        [7][0-9])
+                echo "Grade: C"
+                ;;  #As with all things in bash, indentation not neccesary but reccomended.
+        [6][0-9])
+                echo "Grade: D"
+                ;;
+        [0-5][0-9])
+                echo "Grade: F"
+                ;;
+        *)
+                echo "Invalid score."
+                ;;
+esac
+```
 
-
+It is important to note that `case` can also be used for comparisons of numbers and such. It sits here in the **String Manipulation** section as opposed to the **If/Else** because it primarily operates through string comparisons and pattern matching. 
 
 ### Pattern Matching 
 
-Since we have just learned about comparisons, we can apply this directly to string matching.  
+Very briefly: since we have just learned about comparisons, we can apply this directly to string matching. This follows the same comparison format of `[[ <item1> -<compare operator> <item2> ]]`. 
 
 | Operator | Description                    | Example                |
 |----------|--------------------------------|------------------------|
@@ -383,7 +409,7 @@ Since we have just learned about comparisons, we can apply this directly to stri
 | `-n`      | Checks if the string is non-empty           | `[[ -n $str ]]`         |
 | `-z`      | Checks if the string is empty               | `[[ -z $str ]]`         |
 
-
+This is great for throwing conditional comparisons within if/else statements, such as editing output in cases where input is blank or checking for certain "markers" in a file. You can read more about the powers of grep and regex [here](https://computing.stat.berkeley.edu/tutorial-using-bash/regex.html). If you are doing the "password in a haystack" challenge as part of the hpc crash course, then you will get the chance to directly practice with `grep`!
 
 ## Loops
 
