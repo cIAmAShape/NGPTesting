@@ -413,6 +413,19 @@ This is great for throwing conditional comparisons within if/else statements, su
 
 ## Loops
 
+### For Loops
+
+Bash for-loops are inherently *iterative* and do not easily handle a so-called *range based*
+
+### While Loops
+
+(while loops here)
+
+
+Bash also has what is called an `until` loop, which executes the body of the loop repeatedly **until** the condition is *met* (or exits with code 0 as true). This is the exact inverse of the `while` loop, which continues until the condition is no longer true. For example, an `until` loop with condition `until [[ x -gt 10 ]]` (x > 10) will have the same effect as a `while` loop with condition `while [[ x -le 10 ]]` (x <= 10), as both will terminate once x is greater than 10. 
+
+In general, I would advise against using `until` loops unless a specific use-case calls for it, as they do not translate well to many programming problems (and are in many not even included at all). I will not be including a guide on how to write them, as they have the same syntax as their `while` counterpart. 
+
 ## Functions
 
 ## So, why do we use Bash anyway? When is it used in HPC?
