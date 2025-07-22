@@ -254,10 +254,6 @@ echo "scale=3; ($a / $b) + $c" | bc  #Example of compound equation with floats
 ```
 The `-l` flag calls for the **bc library**, which has all kinds of basic math from trigonometry to natural logs. *But remember*, bc is NOT a part of bash and thereby may NOT have the same backwards-compability typically found in bash scripts. More on what the bc -l package can do can be found [here](https://www.geeksforgeeks.org/linux-unix/bc-command-linux-examples/).
 
-## Comparisons and If/Else statements
-
-placeholder text
-
 ### Comparisons
 
 
@@ -277,13 +273,29 @@ Below are the many comparisons bash is capable of doing:
 | `!`      | Logical NOT                         | `[[ ! condition ]]`                | 
 | /`|/|`| Logical OR for | `[[ condition1 /|/| condition2 ]]` |
 
-Since everything is untyped and treated as a string in bash, there is no "Boolean" variable type. Instead, we have the `true` and `false` **commands**, which return either a 0 for `true` (indicating that the command *exited succesfully*) or nonzero numbers for `false` (usually 1, indicating that the success did *not exit succesfully*). You can set variables equal to these commands, and they will typically function like a typical 
+Since everything is untyped and treated as a string in bash, there is no "Boolean" variable type. Instead, we have the `true` and `false` **commands**, which return either a 0 for `true` (indicating that the command *exited succesfully*) or nonzero numbers for `false` (usually 1, indicating that the success did *not exit succesfully*). You can set variables equal to these commands, and they will usually function like they would in another programming language. but it's important to know this distinction when using them.
 
-### If/Else
+Before we get into the typical if/else, let's take a quick detour into the logical operators. These are the primary way in which comparisons can be used *without* an if/else block. An example run within the bash command line is shown below (follow along if you wish to try this yourself):
+
+```
+[[ 5 -lt 3 ]]  #Running this command on its own returns nothing, but...
+echo "$?"  #Remember this special character that returns the process id of the last executed command? Now it shows us how "booleans" really work in bash!
+# Output: 1 (or something that isn't 0)
+
+[[ 15 -gt 7 ]] && echo "Success!!"  #AND comparison. Since the comparison on the right returns succesfully, and the echo command on the left also returns succesfully, the output command is actually echoed!
+#Output: Success!!
+#If we switched the -gt flag with the -lt flag, the AND conditional would fail and no output would happen. 
+```
+
+These use cases are typically reserved for using command-line level bash and not for scripting, but it is still good to know these. 
+
+### If/Else and If/Elif/Else
+
+If/Else and If/Elif statements in bash work the same as any other programming language would, with some syntax difference. Here is the main structure for both:
 
 
 
-### If/Elif/Else
+The main and recurring syntax for these blocks is the use of **start** and **stop** indicators; for `if/else` and `if/elif/else` statements, these are `then` and `fi` (Notice that `fi` is the word `if` spelled backwards!). They indicate to the bash interpreter when the block begins and ends. 
 
 
 
@@ -299,7 +311,7 @@ Perhaps one of bash's strongest utilities is its ability to manipulate, match, s
 
 ### Pattern Matching 
 
-Comparisons are also great for matching string patterns.  
+Since we have just learned about comparisons, we can apply this directly to string matching.  
 
 | Operator | Description                    | Example                |
 |----------|--------------------------------|------------------------|
@@ -327,5 +339,6 @@ Here is a list of very good resources to use for people interested in bash scrip
 > [Medium blog on bash flag handling](https://medium.com/@wujido20/handling-flags-in-bash-scripts-4b06b4d0ed04)
 > [W3schools intro to bash scripting](https://www.w3schools.com/bash/bash_script.php)
 > [GeeksforGeeks intro to bash](https://www.geeksforgeeks.org/linux-unix/bash-scripting-introduction-to-bash-and-bash-scripting/)
+> [Software carpentry](https://swcarpentry.github.io/shell-novice/index.html)
 
 **Disclaimer:** This guide was written by somebody who only really has ~1.5 years of bash scripting and is nowhere being an "expert" in the subject. The guide itself was heavily inspiried by *The Linux Documentation Project*'s introductory explorations as well as a lot of things the author wish they knew / were taught when starting out. 
