@@ -1,4 +1,4 @@
-# Intro to Bash
+# Intro to Bash Scripting
 
 Bash (Bourne-Again SHell) is a command-line interpreter, shell, and scripting language used almost ubiquitously across Unix-base and many macOS systems. Much of the function of bash is based around managing an operating system. Created by Brian Fox in around 1988, BASH has since received continuous development [throughout its history](https://developer.ibm.com/tutorials/l-linux-shells/) and to the present. 
 
@@ -339,7 +339,32 @@ Notice how the `else` statements is for handling if the number is 3. In this cas
 
 ## String Manipulation 
 
-Perhaps one of bash's strongest utilities is its ability to manipulate, match, search, and otherwise manipulate strings. YES COMPARISONS, Include them!
+Perhaps one of bash's strongest utilities is its ability to change, match, search, and otherwise manipulate strings. However, many of them are not super centralized and have inconsistent and sometimes confusing-to-use syntax. This section will not cover all of them - just some of the basics. Here's a few of the basics on example form:
+
+```
+#!/bin/bash
+
+str1="Hello, World."
+echo ${str1:0:5}  #Like lists, strings can be indexed, itereated, and sliced through
+echo ${str1: -6}  #They can even be indexed from the end!
+
+str2="mSD90sfmjo"
+echo ${#str2}  #Gets the length of the string
+
+str3="I dont like bash. I dont like linux."
+echo ${str3/dont/really}  #Local replacement (replaces first instance)
+echo ${str3//dont/really}  #Global replacement (replaces ALL instances)
+
+str4="Substrings are difficult."
+echo ${str4%%are*}  #Cuts off all string past (and including) substring "are"
+```
+
+You may have noticed that for printing strings to screen, we have been using the `echo` command. Bash does actually have another method called `printf`, which *differs in usage*. In general, `echo` always appends a newline to the end of each print string it prints and is used mostly for simplier print tasks (as it lacks many of the robust formatters found in `printf`). On the other hand, `printf` does **not** append a newline at the end of each printed string. It leaves all forms of formatting up to the coder and is *much more robust* for formatting complicated prints. Some examples of how to use `printf` can be found [here](https://linuxconfig.org/bash-printf-syntax-basics-with-examples).  
+
+
+
+
+You can read more about the powers of grep and regex [here](https://computing.stat.berkeley.edu/tutorial-using-bash/regex.html). 
 
 ### Case
 
