@@ -391,7 +391,7 @@ case $score in
         *)
                 echo "Invalid score."
                 ;;
-esac
+esac  #NOTICE the end identifier!!
 ```
 
 It is important to note that `case` can also be used for comparisons of numbers and such. It sits here in the **String Manipulation** section as opposed to the **If/Else** because it primarily operates through string comparisons and pattern matching. 
@@ -413,14 +413,35 @@ This is great for throwing conditional comparisons within if/else statements, su
 
 ## Loops
 
+Just like with if-else blocks, loops in bash require a **start** and **stop** indentifier: `do` and `done` respectively. This breaks the typical bash convention of the ending being the same word as the start identifier but backwards. This is mostly to keep in-line with the convention of all other *control structures* and simply because it is very readable. As a refresher, a graph demonstrating how both loops we will be discussing in this section is attached below.
+
+(TODO: attach graph)
+
 ### For Loops
 
-Bash for-loops are inherently *iterative* and do not easily handle a so-called *range based*
+Bash `for` loops are inherently *iterative* and do not easily handle traditional *range based* for-loops that programmers from other languages (mostly Python) are used to. 
 
 ### While Loops
 
-(while loops here)
+`while` loops in bash will continously execute the command body until the condition is no longer true (exits with a nonzero process). These are particularly useful when you don't know the size of your body-input to loop over, or you need to continously do something repetitively (script automation!!). Lets look at the example in 06-loops/while_loop.sh
 
+```
+#!/bin/bash
+
+items=()  #Initalizes an empty array
+read -p "Enter a string, or type 'exit' to quit: " entry
+
+while [[ "${entry}" != "exit" ]]; do
+        items+=("$entry")  #adds to the array
+        read -p "Enter a string, or type 'exit' to quit: " entry
+done
+
+echo "Items you have entered: "
+for i in ${items[@]}; do
+        echo $i
+done
+```
+I would like to comment that, in general, adding to an empty list like this can get costly. This code was just to show a use-case for while-loops.
 
 Bash also has what is called an `until` loop, which executes the body of the loop repeatedly **until** the condition is *met* (or exits with code 0 as true). This is the exact inverse of the `while` loop, which continues until the condition is no longer true. For example, an `until` loop with condition `until [[ x -gt 10 ]]` (x > 10) will have the same effect as a `while` loop with condition `while [[ x -le 10 ]]` (x <= 10), as both will terminate once x is greater than 10. 
 
