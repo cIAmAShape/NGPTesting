@@ -429,6 +429,8 @@ for file in file*; do  #file* finds all files with name 'fileX' followed by what
 done
 ```
 
+This script finds all the files with the name "file" at the beginning and prints their contents. 
+
 One of the strongest aspects of bash is its ability to natively interact with the file system. This is another major use-case for bash: checking through files and centralizing, manipulating, and otherwise changing files to fit your liking. You can, of course, navigate to and from different subdirectories using `cd` within your script. If you combine this with environment variables such as `$PWD` and `$USER`, the possibilities for setting and manipulating the shell are (almost) limitless. 
 
 Earlier I mentioned that bash does not handle *range-based* for-loops particularly well. However, this does not mean bash is unable to do them; rather the syntax and style is more akin to the **C-style** loop. This is (like many things) because of bash's evolutionary history as a shell and its close relationship with the creation of C. Now, let's explore how to handle these kind of loops in `06-loops/for_loop_num.sh`:
@@ -442,12 +444,6 @@ for (( i=0; i<=num; i++)); do  #C-style syntax for loops
         echo $i
 done
 ```
-
-
-
-
-
-
 
 ### While Loops
 
