@@ -413,8 +413,7 @@ This is great for throwing conditional comparisons within if/else statements, su
 
 ## Loops
 
-Just like with if-else blocks, loops in bash require a **start** and **stop** indentifier: `do` and `done` respectively. This breaks the typical bash convention of the ending being the same word as the start identifier but backwards. This is mostly to keep in-line with the convention of all other *control structures* and simply because it is very readable. As a refresher, a graph demonstrating how both loops we will be discussing in this section is attached below.
-
+Just like with if-else blocks, loops in bash require a **start** and **stop** indentifier: `do` and `done` respectively. This breaks the typical bash convention of the ending being the same word as the start identifier but backwards. This is mostly to keep in-line with the convention of all other *control structures* and simply because it is very readable. This section will cover both `for` and `while` loops in bash. As a refresher, a graph demonstrating their structure is provided below. 
 (TODO: attach graph)
 
 ### For Loops
