@@ -506,7 +506,7 @@ Notice the use of `return` to return a value. Once again differing greatly from 
 
 ### Local and Global Variables
 
-The variables within a bash function are **always** global variables *unless otherwise specified within the function's body*. What this means is that a variable declared inside the function is accessiable *globally*, or outside of it. If you want to avoid this, you need to declare a function as local using the `local <var_name>` command BEFORE 
+The variables within a bash function are **always** global variables *unless otherwise specified within the function's body*. What this means is that a variable declared inside the function is accessiable *globally*, or outside of it. If you want to avoid this, you need to declare a function as local using the `local <var_name>` command BEFORE setting its "value". Let's take a look at `07-functions/function-variables.sh`: 
 
 ```
 #!/bin/bash
@@ -519,19 +519,23 @@ my_vars () {
 }
 
 echo "${var_predefined}"  #A regular function defined outside of the function scopre
-echo "${var_global}"  #Since my_vars has not been called yet, var_global has not been set. echoes NULL
+echo "${var_global}"  #Since my_vars has not been called yet, var_global has not been set. echoes a NULL string
 
 my_vars  #Function call to intialize my set variables"
 
 echo "${var_global}"  #Since my_vars has been called, this global variable is visible.
-echo "${var_local}"  #This is a local variable. Thus, the variable is unfindable here. echoes NULL
+echo "${var_local}"  #This is a local variable. Thus, the variable is unfindable here. echoes a NULL string
 ```
 
-In order to get the function to actually set variables that will affect other parts of code, you need to utilize this global-variable characteristic of bash functions. **NOTE:** since they are global variables, they can be changed by *any part of your code*. You need to be careful when naming your global variables, lest you accidently overwrite a value. 
+In order to get the function to actually set variables that will affect other parts of code, you need to utilize this global-variable characteristic of bash functions. **NOTE:** since they are global variables, they can be changed by *any part of your code*. You need to be careful when naming your global variables, lest you accidently overwrite something.
 
-### SOMETHING ELSE HERE
+### Miscellaneous information on functions
 
-test
+A few additional notes on functions:
+- Functions in bash can be *nested*. This means that you can define a function within another function.
+- Make sure to only call functions **after** they have been written. If you call them before, the function won't be findable to the interpreter. 
+- You can call function within the body of another function (as long as it has been defined). This is common practice in some spheres.
+- If you want to know more on function and function scope, [Geeks for Geeks](https://www.geeksforgeeks.org/linux-unix/bash-scripting-functions/) has a great intro. 
 
 ## So, why do we use Bash anyway? When is it used in HPC?
 
