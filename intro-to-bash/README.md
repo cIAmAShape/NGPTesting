@@ -271,7 +271,7 @@ Below are the many comparisons bash is capable of doing:
 | `-ge`    | Greater than or equal to      | `[[ $a -ge $b ]]`     |
 | `&&`     | Logical AND                         | `[[ condition1 && condition2 ]]`  |
 | `!`      | Logical NOT                         | `[[ ! condition ]]`                | 
-| &#124;&#124;| Logical OR for | [[ condition1 &#124;&#124; condition2 ]] |
+| <code>&#124;&#124;</code>| Logical OR for | <code>[[ condition1 &#124;&#124; condition2 ]]</code> |
 
 Since everything is untyped and treated as a string in bash, there is no "Boolean" variable type. Instead, we have the `true` and `false` **commands**, which return either a 0 for `true` (indicating that the command *exited successfully*) or nonzero numbers for `false` (usually 1, indicating that the success did *not exit successfully*). You can set variables equal to these commands, and they will usually function like they would in another programming language. but it's important to know this distinction when using them.
 
