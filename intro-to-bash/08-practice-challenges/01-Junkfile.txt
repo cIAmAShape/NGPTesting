@@ -5,7 +5,7 @@ It contains nothing but junk data - random noise that doesn't mean anything impo
 Given the contents of the file, write a bash script that does the following:
 	- Reads the file as input
 	- Finds the largest line in the file (hint, use wc)
-	- Prints which line it is (number), the contents of the line, and its byte size.
+	- Prints which line it is (number), the contents of the line, and its size.
 
 
 Bonus!!!!
