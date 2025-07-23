@@ -119,7 +119,7 @@ echo "${desserts[*]}" #popsicles cake brownies ice_cream
 **NOTICE**. When using unset on slot 0, all of the items to the right **DO NOT AUTOMATICALLY** shift left to fill the space. This is because bash does not *really* "destroy" the slot for that structure; rather, it sets whatever is at slot 0 to a "null" or "empty string". You can see this more clearly if you run `declare -p desserts` after having removed the 0 slot.
 
 Below is a graph of what is *really* happening:
- ![Memory graph of bash](images/bashgraph1.png/)
+ ![Memory graph of bash](images/array-example.png/)
 
 As of bash 4.0 (released in 2009), bash can also handle something called an "associative array", which is an array indexed by keys (strings) instead of numbers. For those of you who are more familiar with languages like C#, Python, or Swift, this acts almost functionally identical to a dictionary. It is also the only variable type that needs to be specifically declared:
 ```
@@ -293,9 +293,7 @@ These use cases are typically reserved for using command-line level bash and not
 
 If/Else and If/Elif statements in bash work the same as any other programming language would, with some syntax difference. Here is the main structure for both:
 
-![Left: If/Else || Right: If/Elif/Else](images/if_statement_structure.png)
-
-Todo: label image
+![Left: If/Else || Right: If/Elif/Else](images/if-structure.png)
 
 The main and recurring syntax for these blocks in bash is the use of **start** and **stop** indicators; for `if/else` and `if/elif/else` statements, these are `then` and `fi` (Notice that `fi` is the word `if` spelled backwards!). They indicate to the bash interpreter when the block begins and ends. You will also need to use a semicolon to place a distinction between the *start* command at the *condition / comparison*. While indentation is not strictly neccesary for the `if` block, it helps with readability.
 
@@ -414,7 +412,8 @@ This is great for throwing conditional comparisons within if/else statements, su
 ## Loops
 
 Just like with if-else blocks, loops in bash require a **start** and **stop** indentifier: `do` and `done` respectively. This breaks the typical bash convention of the ending being the same word as the start identifier but backwards. This is mostly to keep in-line with the convention of all other *control structures* and simply because it is very readable. This section will cover both `for` and `while` loops in bash. As a refresher, a graph demonstrating their structure is provided below. 
-(TODO: attach graph)
+
+![For and While loop flowchat](images/loop-structure.png)
 
 ### For Loops
 
