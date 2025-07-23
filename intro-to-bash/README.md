@@ -473,6 +473,20 @@ In general, I would advise against using `until` loops unless a specific use-cas
 
 ## Functions
 
+The last topic that this guide covers is functions. A function is essentially a block of code that, when called, performs a specific task. It is esentially a way to standardize the actions of your code into a readable format and are used regularly in almost every kind of programming. The basic syntax for a function looks like this:
+
+```
+#!/bin/bash
+
+testFunction () {  #Notice the parentheses (). This indicates that "testFunction" refers to a function and not a variable. Also notice the brackets {}, which indicate the contents of the function.
+     #Body of the function here
+}
+
+testFunction  #"Calls" the function to be run. Once to interpreter reaches this code, it will jump up to the function name and execute the body of the function.
+```
+
+
+
 ## So, why do we use Bash anyway? When is it used in HPC?
 
 ## The challenge
