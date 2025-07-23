@@ -473,7 +473,7 @@ In general, I would advise against using `until` loops unless a specific use-cas
 
 ## Functions
 
-The last topic that this guide covers is functions. A function is essentially a block of code that, when called, performs a specific task. It is esentially a way to standardize the actions of your code into a readable format and are used regularly in almost every kind of programming. The basic syntax for a function looks like this:
+The last topic that this guide covers is functions. A function is essentially a block of code that, when called, performs a specific task. It is esentially a way to standardize the actions of your code into a readable format and are used regularly in almost every kind of programming. Bash functions have a lot of odd quirks to them that are very unusual when compared to other languages. In general, the basic syntax for a function looks like this:
 
 ```
 #!/bin/bash
@@ -485,7 +485,53 @@ testFunction () {  #Notice the parentheses (). This indicates that "testFunction
 testFunction  #"Calls" the function to be run. Once to interpreter reaches this code, it will jump up to the function name and execute the body of the function.
 ```
 
+### Parameters
 
+Parameters are arguments that you send to the function so that it can do operations on them. Typically these can be anything - variables, strings, arrays, etc. - ___. Unlike other programming languages, they are **not** included as part of the function definition and call. Parameters are instead accessed using those *special variables* that we discussed earlier. You can essentially think of functions in bash more as a command with arguments after. Here is the example `07-functions/function-parameters.sh`: 
+
+```
+#!/bin/bash
+
+myFunction () {
+        echo "$1" #Special variable that gets the 1st parameter (argument) sent after the function call
+        echo "$2"
+        echo "$3"
+        return 0  #Return value. Typically used for checking if the function executed succesfully (0) or not (nonzero). Great for comparisons.
+}
+myFunction "first parameter" "second parameter" "third parameter"  #Parameters are seperated by a space
+echo "The return value is ${$?}"
+```
+
+Notice the use of `return` to return a value. Once again differing greatly from functions in other programming languages, `return` in bash is **never** used to return some arbitrary value that the function worked on. Instead, it is used to signify an exit code to check if the function ran properly. This is usually used in tandem with true/false comparisons to run simple logical operations. We will discuss actually get variables/values in and out of functions in the next section.
+
+### Local and Global Variables
+
+The variables within a bash function are **always** global variables *unless otherwise specified within the function's body*. What this means is that a variable declared inside the function is accessiable *globally*, or outside of it. If you want to avoid this, you need to declare a function as local using the `local <var_name>` command BEFORE 
+
+```
+#!/bin/bash
+var_predefined="Predefined global variable"
+my_vars () {
+        var_global="Global Variable"
+        local var1
+        var_local="Local Variable"
+        return 0
+}
+
+echo "${var_predefined}"  #A regular function defined outside of the function scopre
+echo "${var_global}"  #Since my_vars has not been called yet, var_global has not been set. echoes NULL
+
+my_vars  #Function call to intialize my set variables"
+
+echo "${var_global}"  #Since my_vars has been called, this global variable is visible.
+echo "${var_local}"  #This is a local variable. Thus, the variable is unfindable here. echoes NULL
+```
+
+In order to get the function to actually set variables that will affect other parts of code, you need to utilize this global-variable characteristic of bash functions. **NOTE:** since they are global variables, they can be changed by *any part of your code*. You need to be careful when naming your global variables, lest you accidently overwrite a value. 
+
+### SOMETHING ELSE HERE
+
+test
 
 ## So, why do we use Bash anyway? When is it used in HPC?
 
