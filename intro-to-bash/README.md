@@ -550,7 +550,9 @@ Speaking of environments, configuring the working environment is also very easy 
 ### Challenges
 
 I have created a few practice challenges within the `08-practice-challenges` subfolder. They are designed to synthesize all of the topics covered in this course. These are just for practice - you are (obviously) not expected to do any of them. Here are the practice challenges with an explanation of what topic they cover:
-TODO: Add challenges
+
+
+There are also solutions avaliable in that folder. These are not THE solution (in fact, some of them are purposely written to not be the "best" implementation), just a way to check if your code is returning the right output.
 
 
 ## Additional Notes, Reading, and Cheatsheet
