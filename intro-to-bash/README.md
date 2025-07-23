@@ -2,18 +2,18 @@
 
 Bash (Bourne-Again SHell) is a command-line interpreter, shell, and scripting language used almost ubiquitously across Unix-base and many macOS systems. Much of the function of bash is based around managing an operating system. Created by Brian Fox in around 1988, BASH has since received continuous development [throughout its history](https://developer.ibm.com/tutorials/l-linux-shells/) and to the present. 
 
-Bash is a very helpful language to learn. It provides a very powerful and direct way to communicate with your computer without using a GUI. However, its power is also a weakness: there are no "undo" buttons when moving, removing, copying, or otherwise manipulating files or data. It is also ***not*** a good "general purpose" language - it lacks advanced data structures, has primative error handling, and its use cases are very limited. Always write bash scripts with this in mind. This guide will definietly not cover *everything*, as that is impossible to do in a single, small-scale excersize. If you are interested further in more complicated bash topics, the greatest place to start is [the official bash documentation](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html).
+Bash is a very helpful language to learn. It provides a very powerful and direct way to communicate with your computer without using a GUI. However, its power is also a weakness: there are no "undo" buttons when moving, removing, copying, or otherwise manipulating files or data. It is also ***not*** a good "general purpose" language - it lacks advanced data structures, has primitive error handling, and its use cases are very limited. Always write bash scripts with this in mind. This guide will definitely not cover *everything*, as that is impossible to do in a single, small-scale exercise. If you are interested further in more complicated bash topics, the greatest place to start is [the official bash documentation](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html).
 
 It is recommended not to learn bash as your first programming "language" - rather, use it as a supplement to another language you already know. Bash (and sh) is a "command-line interpreter and shell" first and a "language" second.  
 
 
 ## 1. The very basics: Handling and printing output
 
-The best place to start when learning bash is expriementing with how bash handles input and output. Not only do you learn how to print to screen, but it gives you a taste of the *power* than bash has. If you go to the ***hello*** subdirectory, you will notice a simple file titled hello.sh. To run this, simply type
+The best place to start when learning bash is experimenting with how bash handles input and output. Not only do you learn how to print to screen, but it gives you a taste of the *power* than bash has. If you go to the ***hello*** subdirectory, you will notice a simple file titled hello.sh. To run this, simply type
 ```
  $ sh hello.sh
 ```
-Note that the proper file extension for a bash script is *".sh"*. This is not strictly neccesary for the script to run, but it marks the file as a *shell script*, or a script executed by the Unix/macOS/whatever shell interpreter. The file extension is moreso used so that the user or reader knows the intended use of the file. Some programmers might even use a *".bash"* extension to be more specific. 
+Note that the proper file extension for a bash script is *".sh"*. This is not strictly necessary for the script to run, but it marks the file as a *shell script*, or a script executed by the Unix/macOS/whatever shell interpreter. The file extension is moreso used so that the user or reader knows the intended use of the file. Some programmers might even use a *".bash"* extension to be more specific. 
 
 Once you have run the script, it should print something like this to terminal:
 
@@ -38,13 +38,13 @@ Now, let's actually try to send some output somewhere. As mentioned before, we c
 ```
 sh hello.sh > output.txt
 ```
-If the file output.txt did not exist before, now it does! Taking a look inside of that new file will most definietly have the output you are looking for. But say we instead want not to *overwrite* and file, but *add information to the end* of a file? We can do that to, with the concationation ">>" operator:
+If the file output.txt did not exist before, now it does! Taking a look inside of that new file will most definitely have the output you are looking for. But say we instead want not to *overwrite* and file, but *add information to the end* of a file? We can do that to, with the concatenation ">>" operator:
 ```
 sh hello.sh >> output.txt
 ```
 We have just added to the end of the file. This is especially useful if you, say, need to sort and add data from multiple data files to a centralized file for easy reading. 
 
-There is one last output-manipulation operator which is perhaps the **most important** one to know: the "|" or "pipe" operator. It allows you to take standard ouput *(stdout)* from one bash script/command and use it as standard input *(stdin)* for another. I like to think of it as "sending" the output from once place directly into another. For example, if we wanted to count how many words are printed to the screen when running `hello.sh`, we could "pipe" the printed output into `wc`, a command that counts words: 
+There is one last output-manipulation operator which is perhaps the **most important** one to know: the "|" or "pipe" operator. It allows you to take standard output *(stdout)* from one bash script/command and use it as standard input *(stdin)* for another. I like to think of it as "sending" the output from once place directly into another. For example, if we wanted to count how many words are printed to the screen when running `hello.sh`, we could "pipe" the printed output into `wc`, a command that counts words: 
 ```
 sh hello.sh | wc -w
 #Notice the -w flag. It specifics to wc to count only words and nothing else (it can count lines, bytes, characters, etc.)
@@ -68,7 +68,7 @@ Notice that *there is **no** whitespace* between the variable name and the value
 
 This is also a good time to mention variable types. In bash all variables are generally *untyped* unless declared explicitly. In the example above, the system actually treats `my_num` as a string, not an integer. This can be especially annoying when we need to perform arithmetic on a variable. Bash also *does not* natively support floats. More on this in the **Arithmetic** section.
 
-To refrence a variable at any part in your code, use the `$` symbol in combination with a *brace* `{}` to keep the variable "encapsulated", like so: . 
+To reference a variable at any part in your code, use the `$` symbol in combination with a *brace* `{}` to keep the variable "encapsulated", like so: . 
 ```
 #!/bin/bash
 
@@ -76,7 +76,7 @@ my_string="This is a string"
 my_num=3
 echo "My string is ${my_string} and my number is ${my_num}"
 ```
-Note that encapsulation is not strictly neccesary, but highly recommended. Without it, bash will attempt to read all characters past the `$` symbol (excluding spaces) as the name of the variable. So if you do not have whitespace between where you are trying to print the variable and the next part of the string, it will fail.
+Note that encapsulation is not strictly necessary, but highly recommended. Without it, bash will attempt to read all characters past the `$` symbol (excluding spaces) as the name of the variable. So if you do not have whitespace between where you are trying to print the variable and the next part of the string, it will fail.
 ```
 echo "$my_string123"  #Results in an error, as the variable is not findable. 
 echo "$my_string 123"  #Echoes "my_string 123" to screen (with whitespace)
@@ -84,7 +84,7 @@ echo "${my_string}123"  #Echoes "my_string123" to screen
 ```
 
 
-You can also "declare" a variable to be a specific type using the `declare --flag` operation, if you wish to fully type your variables. I will not go into fine detail with variable decleration for scalar variables, but if you wish to know more then [this page](https://tldp.org/LDP/abs/html/untyped.html) from **The Linux Documentation Project** has a great exploration of this topic.
+You can also "declare" a variable to be a specific type using the `declare --flag` operation, if you wish to fully type your variables. I will not go into fine detail with variable declaration for scalar variables, but if you wish to know more then [this page](https://tldp.org/LDP/abs/html/untyped.html) from **The Linux Documentation Project** has a great exploration of this topic.
 
 |Flag| Description of flag operation |
 |----|---------------------------------------------------------------------------------------------------|
@@ -97,7 +97,7 @@ You can also "declare" a variable to be a specific type using the `declare --fla
 
 ### Array Variables
 
-In addition to typical scalar variables, bash can also handle 1-dimensional arrays. Since everything including arrays are technically untyped (unless they are declared beforehand), an "array" in bash can feature both strings *and* integers. While one could definietly argue that this would fail the strict definition of an array (I personally would not disagree), remember: **everything is untyped to begin with**. Those "integers" in the array are really just strings.
+In addition to typical scalar variables, bash can also handle 1-dimensional arrays. Since everything including arrays are technically untyped (unless they are declared beforehand), an "array" in bash can feature both strings *and* integers. While one could definitely argue that this would fail the strict definition of an array (I personally would not disagree), remember: **everything is untyped to begin with**. Those "integers" in the array are really just strings.
 
 Arrays as variables are typically declared using the following format:
 ```
@@ -131,7 +131,7 @@ colors["blue"]="Hex code: 00 00 FF"
 echo ${colors["red"]}  #Output: "Hex code: FF 00 00"
 ```
 
-Be warned when using associative arrays. Since bash places great emphasis on *backwards compatiblility*, these arrays will **not** work on older systems. In the case that you need these kind of structures in an older system, you will need to find a way to find a work around. In addition, bash arrays are not designed to work well for large datasets - they are stored in memory, their operations get slower as the size of the array increases, and they generally don't scale well. It is best to save bash arrays for little tasks.  
+Be warned when using associative arrays. Since bash places great emphasis on *backwards compatibility*, these arrays will **not** work on older systems. In the case that you need these kind of structures in an older system, you will need to find a way to find a work around. In addition, bash arrays are not designed to work well for large datasets - they are stored in memory, their operations get slower as the size of the array increases, and they generally don't scale well. It is best to save bash arrays for little tasks.  
 
 ### Environment Variables
 
@@ -151,7 +151,7 @@ If you are running this training in Odo, or Frontier, or whatever system that is
 
 ### Special Variables
 
-If you have been paying attention to the last few code snippits, you might have noticed that each has begun with the line `#!/bin/bash`. This is not a comment, but something called a *shebang* line. The `#!` at the beginning indicates to the shell that the following path (in this case, `/bin/bash`) leads to the interpreter *from which the code is executed*. This is **not** always neccesary; explicitly calling bash to run the script `bash script.sh` can render the shebang uneeded. However, it is **highly recommended** to include this at the start of *each and every bash script you write*.   
+If you have been paying attention to the last few code snippets, you might have noticed that each has begun with the line `#!/bin/bash`. This is not a comment, but something called a *shebang* line. The `#!` at the beginning indicates to the shell that the following path (in this case, `/bin/bash`) leads to the interpreter *from which the code is executed*. This is **not** always necessary; explicitly calling bash to run the script `bash script.sh` can render the shebang unneeded. However, it is **highly recommended** to include this at the start of *each and every bash script you write*.   
 
 There are also special variables that allow you to send *arguments*. This is great for a good number of reasons, from creating *option flags* for your scripts to *sending specific files* that you want the script to interact with. Below is a list of a few of these special variables:
 
@@ -160,7 +160,7 @@ There are also special variables that allow you to send *arguments*. This is gre
 | $0             | References the name of the script                                                       |
 | $1, $2, .., $N | References the parameters up to N after the script, $1 being the first after the script |
 | $#             | References the number of parameters sent                                                |
-| $@             | Gets all parameters as seperate strings                                                 |
+| $@             | Gets all parameters as separate strings                                                 |
 | $*             | Gets all parameters as a singular, combined string                                      |
 | $?             | Gets the exit status of the last executed command                                       |
 | $$             | Gets the PID (Process ID) of the current script / shell                                 |
@@ -181,7 +181,7 @@ Arithmetic in bash is a bit... strange. Since every variable is treated as an un
 
 ### `$((<op>))` syntax
 
-Remember earlier in this guide that taught you how to "encapsulate" string variables to keep them clean and readable? This is why. Similar to how you would use `${}` syntax to mark a variable in a string, you can use `$(())` to mark a section as peforming mathematical operations. Let's look at the example below from file arithmetic/math1.sh:
+Remember earlier in this guide that taught you how to "encapsulate" string variables to keep them clean and readable? This is why. Similar to how you would use `${}` syntax to mark a variable in a string, you can use `$(())` to mark a section as performing mathematical operations. Let's look at the example below from file arithmetic/math1.sh:
 ```
 #!/bin/bash
 
@@ -222,11 +222,11 @@ Bash is capable of doing most basic arithmetic out there. But since it does not 
 | a=$((a /= b)) | Divide by constant|
 | a=$((a %= b) | Modulo by constant|
 
-Of course, this is not the only way to do integer arithmetic in bash. Using the `let` or `expr` commands is valid depending on their context. But I am focusing on this form because it is generally the preffered and most efficent method in most use-cases. You are free to use whatever your project might call for. 
+Of course, this is not the only way to do integer arithmetic in bash. Using the `let` or `expr` commands is valid depending on their context. But I am focusing on this form because it is generally the preferred and most efficient method in most use-cases. You are free to use whatever your project might call for. 
 
 ### `bc` command
 
-For handling actual floating-point numbers and more complicated math, you can use the `bc` library. It is important to note that `bc` (or basic calculator, as it is called) is **not** a built-in part of the bash shell; rather, it is a seperate command-line utility written in C (as all good things are) that comes pre-packaged in most, *but not all*, linux distributions. Depending on what version of Linux/macOS version you are running, you might have to install it manually to use it. **This is because native bash has *no* handling of floating-points.**
+For handling actual floating-point numbers and more complicated math, you can use the `bc` library. It is important to note that `bc` (or basic calculator, as it is called) is **not** a built-in part of the bash shell; rather, it is a separate command-line utility written in C (as all good things are) that comes pre-packaged in most, *but not all*, Linux distributions. Depending on what version of Linux/macOS version you are running, you might have to install it manually to use it. **This is because native bash has *no* handling of floating-points.**
 
 Because it is not a built-in package, you actually have to *pipe* your mathematical equation to the `bc` operator. 
 ```
@@ -252,12 +252,12 @@ echo "scale=4; l(e(2))" | bc -l  #Natural log of e^2
 echo "scale=3; ($a / $b) + $c" | bc  #Example of compound equation with floats
 #5.633
 ```
-The `-l` flag calls for the **bc library**, which has all kinds of basic math from trigonometry to natural logs. *But remember*, bc is NOT a part of bash and thereby may NOT have the same backwards-compability typically found in bash scripts. More on what the bc -l package can do can be found [here](https://www.geeksforgeeks.org/linux-unix/bc-command-linux-examples/).
+The `-l` flag calls for the **bc library**, which has all kinds of basic math from trigonometry to natural logs. *But remember*, bc is NOT a part of bash and thereby may NOT have the same backwards-compatibility typically found in bash scripts. More on what the bc -l package can do can be found [here](https://www.geeksforgeeks.org/linux-unix/bc-command-linux-examples/).
 
 ## 4. Comparisons
 
 
-Given the long evolutionary history of bash as a shell that has evolved greatly over time, there are technically three primary syntaxes for comparing values, being single-brackets `[]`, double brackets `[[]]`, and double paranthesis `(())`. While each can be used for different things, we will primarily be focusing on double-bracket syntax as it is the newest and most robust. In general, the format for comparisons is `[[ <item1> -<compare operator> <item2> ]]`. **Notice** the spaces that seperate each argument; *these are important for how bash interprets the comparison*. 
+Given the long evolutionary history of bash as a shell that has evolved greatly over time, there are technically three primary syntaxes for comparing values, being single-brackets `[]`, double brackets `[[]]`, and double parentheses `(())`. While each can be used for different things, we will primarily be focusing on double-bracket syntax as it is the newest and most robust. In general, the format for comparisons is `[[ <item1> -<compare operator> <item2> ]]`. **Notice** the spaces that separate each argument; *these are important for how bash interprets the comparison*. 
 
 Below are the many comparisons bash is capable of doing:
 
@@ -271,9 +271,9 @@ Below are the many comparisons bash is capable of doing:
 | `-ge`    | Greater than or equal to      | `[[ $a -ge $b ]]`     |
 | `&&`     | Logical AND                         | `[[ condition1 && condition2 ]]`  |
 | `!`      | Logical NOT                         | `[[ ! condition ]]`                | 
-| /`|/|`| Logical OR for | `[[ condition1 /|/| condition2 ]]` |
+| &#124;&#124;| Logical OR for | [[ condition1 &#124;&#124; condition2 ]] |
 
-Since everything is untyped and treated as a string in bash, there is no "Boolean" variable type. Instead, we have the `true` and `false` **commands**, which return either a 0 for `true` (indicating that the command *exited succesfully*) or nonzero numbers for `false` (usually 1, indicating that the success did *not exit succesfully*). You can set variables equal to these commands, and they will usually function like they would in another programming language. but it's important to know this distinction when using them.
+Since everything is untyped and treated as a string in bash, there is no "Boolean" variable type. Instead, we have the `true` and `false` **commands**, which return either a 0 for `true` (indicating that the command *exited successfully*) or nonzero numbers for `false` (usually 1, indicating that the success did *not exit successfully*). You can set variables equal to these commands, and they will usually function like they would in another programming language. but it's important to know this distinction when using them.
 
 Before we get into the typical if/else, let's take a quick detour into the logical operators. These are the primary way in which comparisons can be used *without* an if/else block. An example run within the bash command line is shown below (follow along if you wish to try this yourself):
 
@@ -295,7 +295,7 @@ If/Else and If/Elif statements in bash work the same as any other programming la
 
 ![Left: If/Else || Right: If/Elif/Else](images/if-structure.png)
 
-The main and recurring syntax for these blocks in bash is the use of **start** and **stop** indicators; for `if/else` and `if/elif/else` statements, these are `then` and `fi` (Notice that `fi` is the word `if` spelled backwards!). They indicate to the bash interpreter when the block begins and ends. You will also need to use a semicolon to place a distinction between the *start* command at the *condition / comparison*. While indentation is not strictly neccesary for the `if` block, it helps with readability.
+The main and recurring syntax for these blocks in bash is the use of **start** and **stop** indicators; for `if/else` and `if/elif/else` statements, these are `then` and `fi` (Notice that `fi` is the word `if` spelled backwards!). They indicate to the bash interpreter when the block begins and ends. You will also need to use a semicolon to place a distinction between the *start* command at the *condition / comparison*. While indentation is not strictly necessary for the `if` block, it helps with readability.
 
 Now, let's look at `comparisons/ex1.sh`, a brief and simple number comparison example:
 
@@ -357,13 +357,13 @@ str4="Substrings are difficult."
 echo ${str4%%are*}  #Cuts off all string past (and including) substring "are"
 ```
 
-You may have noticed that for printing strings to screen, we have been using the `echo` command. Bash does actually have another method called `printf`, which *differs in usage*. In general, `echo` always appends a newline to the end of each print string it prints and is used mostly for simplier print tasks (as it lacks many of the robust formatters found in `printf`). On the other hand, `printf` does **not** append a newline at the end of each printed string. It leaves all forms of formatting up to the coder and is *much more robust* for formatting complicated prints. Some examples of how to use `printf` can be found [here](https://linuxconfig.org/bash-printf-syntax-basics-with-examples).  
+You may have noticed that for printing strings to screen, we have been using the `echo` command. Bash does actually have another method called `printf`, which *differs in usage*. In general, `echo` always appends a newline to the end of each print string it prints and is used mostly for simpler print tasks (as it lacks many of the robust formatters found in `printf`). On the other hand, `printf` does **not** append a newline at the end of each printed string. It leaves all forms of formatting up to the coder and is *much more robust* for formatting complicated prints. Some examples of how to use `printf` can be found [here](https://linuxconfig.org/bash-printf-syntax-basics-with-examples).  
 
 TODO: Basics OR and AND string searching (grep/regex) !!!
 
 ### Case-Esac
 
-Similar to the if/else block, bash also has a `case` statement. This is similar to a `switch` statement found in C, C++, and other compilied language (the Python equivalent is the `match-case` statement). It is great for handling pattern-based cases for specific scenarios. Unlike the if/else block in bash, each case is seperated by *two semicolons (;;)*. 
+Similar to the if/else block, bash also has a `case` statement. This is similar to a `switch` statement found in C, C++, and other compiled languages (the Python equivalent is the `match-case` statement). It is great for handling pattern-based cases for specific scenarios. Unlike the if/else block in bash, each case is separated by *two semicolons (;;)*. 
 
 Let's take a look at this example code '05-string-manipulation/'which asks the user for a number grade and returns a letter (this is based off the American school system grading scale. Apologies if this is confusing to any readers who are not from the US.)
 
@@ -411,9 +411,9 @@ This is great for throwing conditional comparisons within if/else statements, su
 
 ## 6. Loops
 
-Just like with if-else blocks, loops in bash require a **start** and **stop** indentifier: `do` and `done` respectively. This breaks the typical bash convention of the ending being the same word as the start identifier but backwards. This is mostly to keep in-line with the convention of all other *control structures* and simply because it is very readable. This section will cover both `for` and `while` loops in bash. As a refresher, a graph demonstrating their structure is provided below. 
+Just like with if-else blocks, loops in bash require a **start** and **stop** identifier: `do` and `done` respectively. This breaks the typical bash convention of the ending being the same word as the start identifier but backwards. This is mostly to keep in-line with the convention of all other *control structures* and simply because it is very readable. This section will cover both `for` and `while` loops in bash. As a refresher, a graph demonstrating their structure is provided below. 
 
-![For and While loop flowchat](images/loop-structure.png)
+![For and While loop flowchart](images/loop-structure.png)
 
 ### For Loops
 
@@ -447,7 +447,7 @@ done
 
 ### While Loops
 
-`while` loops in bash will continously execute the command body until the condition is no longer true (exits with a nonzero process). These are particularly useful when you don't know the size of your body-input to loop over, or you need to continously do something repetitively (script automation!!). Lets look at the example in 06-loops/while_loop.sh
+`while` loops in bash will continuously execute the command body until the condition is no longer true (exits with a nonzero process). These are particularly useful when you don't know the size of your body-input to loop over, or you need to continuously do something repetitively (script automation!!). Lets look at the example in 06-loops/while_loop.sh
 
 ```
 #!/bin/bash
@@ -473,7 +473,7 @@ In general, I would advise against using `until` loops unless a specific use-cas
 
 ## 7. Functions
 
-The last topic that this guide covers is functions. A function is essentially a block of code that, when called, performs a specific task. It is esentially a way to standardize the actions of your code into a readable format and are used regularly in almost every kind of programming. Bash functions have a lot of odd quirks to them that are very unusual when compared to other languages. In general, the basic syntax for a function looks like this:
+The last topic that this guide covers is functions. A function is essentially a block of code that, when called, performs a specific task. It is essentially a way to standardize the actions of your code into a readable format and are used regularly in almost every kind of programming. Bash functions have a lot of odd quirks to them that are very unusual when compared to other languages. In general, the basic syntax for a function looks like this:
 
 ```
 #!/bin/bash
@@ -506,7 +506,7 @@ Notice the use of `return` to return a value. Once again differing greatly from 
 
 ### Local and Global Variables
 
-The variables within a bash function are **always** global variables *unless otherwise specified within the function's body*. What this means is that a variable declared inside the function is accessiable *globally*, or outside of it. If you want to avoid this, you need to declare a function as local using the `local <var_name>` command BEFORE setting its "value". Let's take a look at `07-functions/function-variables.sh`: 
+The variables within a bash function are **always** global variables *unless otherwise specified within the function's body*. What this means is that a variable declared inside the function is accessible *globally*, or outside of it. If you want to avoid this, you need to declare a function as local using the `local <var_name>` command BEFORE setting its "value". Let's take a look at `07-functions/function-variables.sh`: 
 
 ```
 #!/bin/bash
@@ -541,11 +541,11 @@ A few additional notes on functions:
 
 ### So, why do we use Bash anyway? When is it used in HPC?
 
-Other than the obvious fact that most High Performance Computing (HPC) interfaces are entirely on bash or bash-adjacent systems, knowing basic scripting skills can really elevate your productivity. It can be used in tandem with job managers such as "Slurm" to easily and efficently submit jobs and automate many processes, including data preperation, complilation of code, etc. 
+Other than the obvious fact that most High Performance Computing (HPC) interfaces are entirely on bash or bash-adjacent systems, knowing basic scripting skills can really elevate your productivity. It can be used in tandem with job managers such as "Slurm" to easily and efficiently submit jobs and automate many processes, including data preparation, compilation of code, etc. 
 
 For example: say you are attempting to find the best node-count, gpu's, walltime, etc. for a specific job type you are trying to run. You could manually test how each performs under specific parameters, **OR** you could write a bash script that comprehensively goes through each possible parameter (loop), writes the output of each job to a centralized file (output handling), and finds the best one (string/integer comparison) - all in the background, while you work on other tasks! It's really quite useful for the HPC environment.
 
-Speaking of environments, configuring the working environment is also very easy in bash.. Its direct, low-level interface with the file system and ability to set and refrence working ENVs and ENV variables make it a powerful tool for system creation and upkeep. 
+Speaking of environments, configuring the working environment is also very easy in bash.. Its direct, low-level interface with the file system and ability to set and reference working ENVs and ENV variables make it a powerful tool for system creation and upkeep. 
 
 ### Challenges
 
@@ -562,4 +562,4 @@ Here is a list of very good resources to use for people interested in bash scrip
 - [GeeksforGeeks intro to bash](https://www.geeksforgeeks.org/linux-unix/bash-scripting-introduction-to-bash-and-bash-scripting/) Great lessons for practice.
 - [Software carpentry](https://swcarpentry.github.io/shell-novice/index.html) Covers a lot of managing **files** that this intro does not.
 
-**Disclaimer:** This guide was written by somebody who only really has ~1.5 years of bash scripting and is nowhere being an "expert" in the subject. The guide itself was heavily inspiried by *The Linux Documentation Project*'s introductory explorations as well as a lot of things the author wish they knew / were taught when starting out. 
+**Disclaimer:** This guide was written by somebody who only really has ~1.5 years of bash scripting and is nowhere being an "expert" in the subject. The guide itself was heavily inspired by *The Linux Documentation Project*'s introductory explorations as well as a lot of things the author wish they knew / were taught when starting out. 
