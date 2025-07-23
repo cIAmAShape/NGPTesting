@@ -365,7 +365,7 @@ TODO: Basics OR and AND string searching (grep/regex)
 
 Similar to the if/else block, bash also has a `case` statement. This is similar to a `switch` statement found in C, C++, and other compilied language (the Python equivalent is the `match-case` statement). It is great for handling pattern-based cases for specific scenarios. Unlike the if/else block in bash, each case is seperated by *two semicolons (;;)*. 
 
-Let's take a look at this example code '05-string-manipulation/'which asks the user for a number and returns information on the program's "favorite number"
+Let's take a look at this example code '05-string-manipulation/'which asks the user for a number grade and returns a letter (this is based off the American school system grading scale. Apologies if this is confusing to any readers who are not from the US.)
 
 ```
 #!/bin/bash
