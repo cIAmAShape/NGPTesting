@@ -1,0 +1,16 @@
+In this folder you will find a large text file titled "noise.txt".
+It contains nothing but junk data - random noise that doesn't mean anything important. Your job is to find the largest line.
+
+
+Given the contents of the file, write a bash script that does the following:
+	- Reads the file as input
+	- Finds the largest line in the file (hint, use wc)
+	- Prints which line it is (number), the contents of the line, and its byte size.
+
+
+Bonus!!!!
+	- Find and print to screen the average byte size of all lines.
+	- Find and print to screen the largest file starting with each letter in the alphabet (a-z). 
+
+
+
