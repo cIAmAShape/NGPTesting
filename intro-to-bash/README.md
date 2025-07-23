@@ -7,7 +7,7 @@ Bash is a very helpful language to learn. It provides a very powerful and direct
 It is recommended not to learn bash as your first programming "language" - rather, use it as a supplement to another language you already know. Bash (and sh) is a "command-line interpreter and shell" first and a "language" second.  
 
 
-## The very basics: Handling and printing output
+## 1. The very basics: Handling and printing output
 
 The best place to start when learning bash is expriementing with how bash handles input and output. Not only do you learn how to print to screen, but it gives you a taste of the *power* than bash has. If you go to the ***hello*** subdirectory, you will notice a simple file titled hello.sh. To run this, simply type
 ```
@@ -51,7 +51,7 @@ sh hello.sh | wc -w
 ```
 Note that pipes can be stacked as many times as you want. You can take the output from `command1 | command2` and directly pipe it to `command3`, all in one line! `command1 | command2 | command3`. There are (obviously) more commands than just `wc`, of which we will discuss in **String Manipulation**
 
-## Variables, Parameters, and Flags
+## 2. Variables, Parameters, and Flags
 
 Variables in bash are quite a bit different than many other programming languages. In general, there are three primary variable types: **Scalar Variables**, **Array Variables**, and **Environment Variables**. 
 
@@ -175,7 +175,7 @@ $ sh arguments.sh <file-you-want-read>.txt  #The filename is sent as $1
 
 I would highly advise you make and mess around with your own variables to get the hang of it. The best way to learn bash **by far** is to practice using it. We will be going more in-detail about writing option flags for your bash scripts as a practice exercise for our **loops** section.
  
-## Arithmetic
+## 3. Arithmetic
 
 Arithmetic in bash is a bit... strange. Since every variable is treated as an untyped string, we need to use a different set of operations and syntax to properly do math. It becomes especially tricky once we start to assign numbers to variables. There are a multitude of ways to go about performing mathematical operations in bash, but this guide focuses on two: `$((<op>))` syntax for integer arithmetic and the `bc` command for floating-point numbers. 
 
@@ -254,7 +254,7 @@ echo "scale=3; ($a / $b) + $c" | bc  #Example of compound equation with floats
 ```
 The `-l` flag calls for the **bc library**, which has all kinds of basic math from trigonometry to natural logs. *But remember*, bc is NOT a part of bash and thereby may NOT have the same backwards-compability typically found in bash scripts. More on what the bc -l package can do can be found [here](https://www.geeksforgeeks.org/linux-unix/bc-command-linux-examples/).
 
-## Comparisons
+## 4. Comparisons
 
 
 Given the long evolutionary history of bash as a shell that has evolved greatly over time, there are technically three primary syntaxes for comparing values, being single-brackets `[]`, double brackets `[[]]`, and double paranthesis `(())`. While each can be used for different things, we will primarily be focusing on double-bracket syntax as it is the newest and most robust. In general, the format for comparisons is `[[ <item1> -<compare operator> <item2> ]]`. **Notice** the spaces that seperate each argument; *these are important for how bash interprets the comparison*. 
@@ -335,7 +335,7 @@ fi
 
 Notice how the `else` statements is for handling if the number is 3. In this case, the code will run through all of the if/elif statements until it reaches the end. This is mostly to demonstrate behavior of the if/elif/else structure. As with anything, the best way to learn these is to practice writing them yourself. 
 
-## String Manipulation 
+## 5. String Manipulation 
 
 Perhaps one of bash's strongest utilities is its ability to change, match, search, and otherwise manipulate strings. However, many of them are not super centralized and have inconsistent and sometimes confusing-to-use syntax. This section will not cover all of them - just some of the basics. Here's a few of the basics on example form:
 
@@ -409,7 +409,7 @@ Very briefly: since we have just learned about comparisons, we can apply this di
 
 This is great for throwing conditional comparisons within if/else statements, such as editing output in cases where input is blank or checking for certain "markers" in a file. You can read more about the powers of grep and regex [here](https://computing.stat.berkeley.edu/tutorial-using-bash/regex.html). If you are doing the "password in a haystack" challenge as part of the hpc crash course, then you will get the chance to directly practice with `grep`!
 
-## Loops
+## 6. Loops
 
 Just like with if-else blocks, loops in bash require a **start** and **stop** indentifier: `do` and `done` respectively. This breaks the typical bash convention of the ending being the same word as the start identifier but backwards. This is mostly to keep in-line with the convention of all other *control structures* and simply because it is very readable. This section will cover both `for` and `while` loops in bash. As a refresher, a graph demonstrating their structure is provided below. 
 
@@ -471,7 +471,7 @@ Bash also has what is called an `until` loop, which executes the body of the loo
 
 In general, I would advise against using `until` loops unless a specific use-case calls for it, as they do not translate well to many programming problems (and are in many not even included at all). I will not be including a guide on how to write them, as they have the same syntax as their `while` counterpart. 
 
-## Functions
+## 7. Functions
 
 The last topic that this guide covers is functions. A function is essentially a block of code that, when called, performs a specific task. It is esentially a way to standardize the actions of your code into a readable format and are used regularly in almost every kind of programming. Bash functions have a lot of odd quirks to them that are very unusual when compared to other languages. In general, the basic syntax for a function looks like this:
 
@@ -537,9 +537,21 @@ A few additional notes on functions:
 - You can call function within the body of another function (as long as it has been defined). This is common practice in some spheres.
 - If you want to know more on function and function scope, [Geeks for Geeks](https://www.geeksforgeeks.org/linux-unix/bash-scripting-functions/) has a great intro. 
 
-## So, why do we use Bash anyway? When is it used in HPC?
+## 8. Practice Challenges
 
-## The challenge
+### So, why do we use Bash anyway? When is it used in HPC?
+
+Other than the obvious fact that most High Performance Computing (HPC) interfaces are entirely on bash or bash-adjacent systems, knowing basic scripting skills can really elevate your productivity. It can be used in tandem with job managers such as "Slurm" to easily and efficently submit jobs and automate many processes, including data preperation, complilation of code, etc. 
+
+For example: say you are attempting to find the best node-count, gpu's, walltime, etc. for a specific job type you are trying to run. You could manually test how each performs under specific parameters, **OR** you could write a bash script that comprehensively goes through each possible parameter (loop), writes the output of each job to a centralized file (output handling), and finds the best one (string/integer comparison) - all in the background, while you work on other tasks! It's really quite useful for the HPC environment.
+
+Speaking of environments, configuring the working environment is also very easy in bash.. Its direct, low-level interface with the file system and ability to set and refrence working ENVs and ENV variables make it a powerful tool for system creation and upkeep. 
+
+### Challenges
+
+I have created a few practice challenges within the `08-practice-challenges` subfolder. They are designed to synthesize all of the topics covered in this course. These are just for practice - you are (obviously) not expected to do any of them. Here are the practice challenges with an explanation of what topic they cover:
+TODO: Add challenges
+
 
 ## Additional Notes, Reading, and Cheatsheet
 
