@@ -359,7 +359,7 @@ echo ${str4%%are*}  #Cuts off all string past (and including) substring "are"
 
 You may have noticed that for printing strings to screen, we have been using the `echo` command. Bash does actually have another method called `printf`, which *differs in usage*. In general, `echo` always appends a newline to the end of each print string it prints and is used mostly for simplier print tasks (as it lacks many of the robust formatters found in `printf`). On the other hand, `printf` does **not** append a newline at the end of each printed string. It leaves all forms of formatting up to the coder and is *much more robust* for formatting complicated prints. Some examples of how to use `printf` can be found [here](https://linuxconfig.org/bash-printf-syntax-basics-with-examples).  
 
-TODO: Basics OR and AND string searching (grep/regex)
+TODO: Basics OR and AND string searching (grep/regex) !!!
 
 ### Case-Esac
 
@@ -417,7 +417,37 @@ Just like with if-else blocks, loops in bash require a **start** and **stop** in
 
 ### For Loops
 
-Bash `for` loops are inherently *iterative* and do not easily handle traditional *range based* for-loops that programmers from other languages (mostly Python) are used to. 
+Bash `for` loops are inherently *iterative* and do not easily handle traditional *range-based* for-loops that programmers from other languages (looking at you, Python programmers!) are used to. There are a multitude of examples to explore in 06-loops, but we will focus on two: `for_loop_files.sh` and `for_loop_num.sh`. 
+
+```
+#!/bin/bash
+
+for file in file*; do  #file* finds all files with name 'fileX' followed by whatever characters 'X' and onward.
+        echo "${file} contents:"
+        cat $file
+        echo ""
+done
+```
+
+One of the strongest aspects of bash is its ability to natively interact with the file system. This is another major use-case for bash: checking through files and centralizing, manipulating, and otherwise changing files to fit your liking. You can, of course, navigate to and from different subdirectories using `cd` within your script. If you combine this with environment variables such as `$PWD` and `$USER`, the possibilities for setting and manipulating the shell are (almost) limitless. 
+
+Earlier I mentioned that bash does not handle *range-based* for-loops particularly well. However, this does not mean bash is unable to do them; rather the syntax and style is more akin to the **C-style** loop. This is (like many things) because of bash's evolutionary history as a shell and its close relationship with the creation of C. Now, let's explore how to handle these kind of loops in `06-loops/for_loop_num.sh`:
+
+```
+#!bin/bash
+
+read -p "Enter a number: " num
+
+for (( i=0; i<=num; i++)); do  #C-style syntax for loops
+        echo $i
+done
+```
+
+
+
+
+
+
 
 ### While Loops
 
