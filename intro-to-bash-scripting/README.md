@@ -170,10 +170,29 @@ The last three are especially useful for debugging. If you wish to see an exampl
 
 ```
 $ cd variables  #Make sure you are in the variables subdirectory for this
-$ sh arguments.sh <file-you-want-read>.txt  #The filename is sent as $1 
+$ sh arguments.sh <file-you-want-read>.txt  #The filename is sent as $1
 ```
 
-I would highly advise you make and mess around with your own variables to get the hang of it. The best way to learn bash **by far** is to practice using it. We will be going more in-detail about writing option flags for your bash scripts as a practice exercise for our **loops** section.
+I would highly advise you make and mess around with your own variables to get the hang of it. The best way to learn bash **by far** is to practice using it. Writing custom flags for your bash scripts is tricky, but can be done with parameters. You can find more on how to do that [here](https://linuxconfig.org/bash-script-flags-usage-with-arguments-examples) (Requires knowing while-loops). 
+
+### Reading User Input
+
+The last subtopic of variables has to do with reading and handling input. You can achieve this by using the `read` command in the follow syntax: `read <input_storage>`. As with everything else in bash, input is fundamentally treated like a string unless previously declared or you try to do arithmetic on it.
+
+```
+read inp1  #Basic form of reading input
+read -p "Enter input: " inp2  #You can send the -p flag to print a "prompt" to screen for input
+
+read -p "Enter 3 items seperated by a space: " l0 l1 l2 #You can have multiple inputs on one line
+```
+
+If you run this as a set bash script (located in `02-variables/read_input.sh`), you will notice that the system will "pause" to take your input. On the very first `read` command, the line will be blank since there is no prompt. This is normal behavior. In general, bash will wait **indefinitely** for user input. If you want to add a timeout function to change this, just add the `-t` flag. 
+
+Just like how you can redirect *output* in bash, you can also redirect *input* with an operator. You can think of this as "sending" input to be read into a `read` command. The operator for doing this is `<`, with the syntax being `command < input`. Notice that the input you are sending is on the **right** and the actual command is on the **left**. Let's look at example `02-variables/redirect_input.sh`:
+
+```
+
+```
  
 ## 3. Arithmetic
 
