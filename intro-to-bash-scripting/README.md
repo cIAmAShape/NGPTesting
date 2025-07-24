@@ -1,5 +1,9 @@
 # Intro to Bash Scripting
 
+<p align="center" width="90%">
+    <img width="40%" src="images/Gnu-bash-logo.svg">
+</p>
+
 Bash (Bourne-Again SHell) is a command-line interpreter, shell, and scripting language used almost ubiquitously across Unix-base and many macOS systems. Much of the function of bash is based around managing an operating system. Created by Brian Fox in around 1988, BASH has since received continuous development [throughout its history](https://developer.ibm.com/tutorials/l-linux-shells/) and to the present. 
 
 Bash is a very helpful language to learn. It provides a very powerful and direct way to communicate with your computer without using a GUI. However, its power is also a weakness: there are no "undo" buttons when moving, removing, copying, or otherwise manipulating files or data. It is also ***not*** a good "general purpose" language - it lacks advanced data structures, has primitive error handling, and its use cases are very limited. Always write bash scripts with this in mind. This guide will definitely not cover *everything*, as that is impossible to do in a single, small-scale exercise. If you are interested further in more complicated bash topics, the greatest place to start is [the official bash documentation](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html).
