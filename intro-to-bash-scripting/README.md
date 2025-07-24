@@ -188,11 +188,20 @@ read -p "Enter 3 items seperated by a space: " l0 l1 l2 #You can have multiple i
 
 If you run this as a set bash script (located in `02-variables/read_input.sh`), you will notice that the system will "pause" to take your input. On the very first `read` command, the line will be blank since there is no prompt. This is normal behavior. In general, bash will wait **indefinitely** for user input. If you want to add a timeout function to change this, just add the `-t` flag. 
 
-Just like how you can redirect *output* in bash, you can also redirect *input* with an operator. You can think of this as "sending" input to be read into a `read` command. The operator for doing this is `<`, with the syntax being `command < input`. Notice that the input you are sending is on the **right** and the actual command is on the **left**. Let's look at example `02-variables/redirect_input.sh`:
+Just like how you can redirect *output* in bash, you can also redirect *input* with an operator. You can think of this as "sending" input to be read into a `read` command. The operator for doing this is `<`, with the syntax being `command < input`. Notice that the input you are sending is on the **right** and the actual command is on the **left**. Let's look at the example `02-variables/redirect_input.sh`:
 
 ```
+#!/bin/bash
 
+grep "Line" < file.txt  #Takes input from file.txt and greps for "Line".
+
+line=$( wc < file.txt )  #You can set directed input as a variable like so.
+#In this case, we are sending file.txt into command wc, which counts the size of the file.
+
+echo $line  #This will be explained later
 ```
+
+Now that you have a knack for all kinds of variables in bash, you are ready to start manipulating their values!
  
 ## 3. Arithmetic
 
