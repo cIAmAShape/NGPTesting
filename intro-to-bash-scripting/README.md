@@ -387,8 +387,6 @@ echo ${str4%%are*}  #Cuts off all string past (and including) substring "are"
 
 You may have noticed that for printing strings to screen, we have been using the `echo` command. Bash does actually have another method called `printf`, which *differs in usage*. In general, `echo` always appends a newline to the end of each print string it prints and is used mostly for simpler print tasks (as it lacks many of the robust formatters found in `printf`). On the other hand, `printf` does **not** append a newline at the end of each printed string. It leaves all forms of formatting up to the coder and is *much more robust* for formatting complicated prints. Some examples of how to use `printf` can be found [here](https://linuxconfig.org/bash-printf-syntax-basics-with-examples).  
 
-TODO: Basics OR and AND string searching (grep/regex) !!!
-
 ### Case-Esac
 
 Similar to the if/else block, bash also has a `case` statement. This is similar to a `switch` statement found in C, C++, and other compiled languages (the Python equivalent is the `match-case` statement). It is great for handling pattern-based cases for specific scenarios. Unlike the if/else block in bash, each case is separated by *two semicolons (;;)*. 
@@ -435,7 +433,7 @@ Very briefly: since we have just learned about comparisons, we can apply this di
 | `-n`      | Checks if the string is non-empty           | `[[ -n $str ]]`         |
 | `-z`      | Checks if the string is empty               | `[[ -z $str ]]`         |
 
-This is great for throwing conditional comparisons within if/else statements, such as editing output in cases where input is blank or checking for certain "markers" in a file. You can read more about the powers of grep and regex [here](https://computing.stat.berkeley.edu/tutorial-using-bash/regex.html). If you are doing the "password in a haystack" challenge as part of the hpc crash course, then you will get the chance to directly practice with `grep`!
+This is great for throwing conditional comparisons within if/else statements, such as editing output in cases where input is blank or checking for certain "markers" in a file. You can read more about the powers of grep and regex [here](https://computing.stat.berkeley.edu/tutorial-using-bash/regex.html) (I will not go into specifics because its a lot to cover). If you are doing the "password in a haystack" challenge as part of the HPC crash course, then you will get the chance to directly practice with `grep`!
 
 ## 6. Loops
 
