@@ -1,0 +1,26 @@
+Thank you for registering for the ORNL AI Initiative | 2025 Summer Intern AI Clinic!
+
+We will be in the JICS Auditorium from 9:00 am – 3:00 pm Monday July 7
+
+You are welcome to have your mentors join you during the day.
+
+
+Morning Session::
+
+9:10 We leave for the AI clinic. 
+9:15 Welcome and AI Initiative Overview , Prasanna Balaprakash, Director of AI Programs, Distinguished R&D Staff Scientist 
+9:30 Prompt Engineering Tips, Suzanne Parete-Koon, CCSD Workforce Initiative Lead, HPC Engineer  . THIS HAS BEEN CHANGED
+10:00 Break into Subject-Matter Groups
+10:10 Collaborative Prompt Brainstorming
+10:30 Share + Feedback on Prompts
+10:35 Prompt Work Time (Individual or Group)
+11:30 Group Discussion: What Worked?
+11:45 Lunch (on your own)
+
+
+
+Afternoon Session::
+
+1:00 Continued Prompt Engineering in Groups
+3:00 Close
+ 
