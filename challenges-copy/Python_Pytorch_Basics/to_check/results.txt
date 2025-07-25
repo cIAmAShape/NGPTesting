@@ -1,0 +1,2104 @@
+searching pytorch_cnn-10655.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.32 %
+Execution time of training loop:  947.7192938327789 s
+
+
+searching pytorch_cnn-10656.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.46 %
+Execution time of training loop:  934.217583656311 s
+
+
+searching pytorch_cnn-10657.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.46 %
+Execution time of training loop:  921.1439387798309 s
+
+
+searching pytorch_cnn-10658.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.08 %
+Execution time of training loop:  921.9657349586487 s
+
+
+searching pytorch_cnn-10665.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.98 %
+Execution time of training loop:  949.6329920291901 s
+
+
+searching pytorch_cnn-10666.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.54 %
+Execution time of training loop:  931.2462658882141 s
+
+
+searching pytorch_cnn-10667.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.94 %
+Execution time of training loop:  1010.4174387454987 s
+
+
+searching pytorch_cnn-10668.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.79 %
+Execution time of training loop:  1010.4775815010071 s
+
+
+searching pytorch_cnn-10672.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.31 %
+Execution time of training loop:  984.8992068767548 s
+
+
+searching pytorch_cnn-10673.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.38 %
+Execution time of training loop:  933.3928406238556 s
+
+
+searching pytorch_cnn-10674.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.84 %
+Execution time of training loop:  923.4457724094391 s
+
+
+searching pytorch_cnn-10675.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.73 %
+Execution time of training loop:  1003.3361313343048 s
+
+
+searching pytorch_cnn-10681.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.16 %
+Execution time of training loop:  934.6474871635437 s
+
+
+searching pytorch_cnn-10682.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.81 %
+Execution time of training loop:  967.4251062870026 s
+
+
+searching pytorch_cnn-10683.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.16 %
+Execution time of training loop:  1027.5699758529663 s
+
+
+searching pytorch_cnn-10685.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.68 %
+Execution time of training loop:  1006.3801312446594 s
+
+
+searching pytorch_cnn-10691.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.51 %
+Execution time of training loop:  935.4789407253265 s
+
+
+searching pytorch_cnn-10692.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.61 %
+Execution time of training loop:  956.3886756896973 s
+
+
+searching pytorch_cnn-10693.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.02 %
+Execution time of training loop:  931.2763113975525 s
+
+
+searching pytorch_cnn-10694.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.16 %
+Execution time of training loop:  960.0573437213898 s
+
+
+searching pytorch_cnn-10700.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.49 %
+Execution time of training loop:  933.2636053562164 s
+
+
+searching pytorch_cnn-10701.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.48 %
+Execution time of training loop:  951.6155881881714 s
+
+
+searching pytorch_cnn-10703.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.94 %
+Execution time of training loop:  992.0357134342194 s
+
+
+searching pytorch_cnn-10705.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.77 %
+Execution time of training loop:  1015.8902156352997 s
+
+
+searching pytorch_cnn-10717.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.15 %
+Execution time of training loop:  937.3201117515564 s
+
+
+searching pytorch_cnn-10720.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.12 %
+Execution time of training loop:  936.2461717128754 s
+
+
+searching pytorch_cnn-10721.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.31 %
+Execution time of training loop:  945.5586020946503 s
+
+
+searching pytorch_cnn-10723.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.25 %
+Execution time of training loop:  1007.091194152832 s
+
+
+searching pytorch_cnn-10727.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.61 %
+Execution time of training loop:  945.9975907802582 s
+
+
+searching pytorch_cnn-10728.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.65 %
+Execution time of training loop:  937.1985712051392 s
+
+
+searching pytorch_cnn-10729.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.7 %
+Execution time of training loop:  935.9657020568848 s
+
+
+searching pytorch_cnn-10730.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.31 %
+Execution time of training loop:  1018.2019431591034 s
+
+
+searching pytorch_cnn-10731.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.96 %
+Execution time of training loop:  942.9499278068542 s
+
+
+searching pytorch_cnn-10732.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.97 %
+Execution time of training loop:  940.8643937110901 s
+
+
+searching pytorch_cnn-10734.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.35 %
+Execution time of training loop:  953.9747507572174 s
+
+
+searching pytorch_cnn-10737.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.2 %
+Execution time of training loop:  1023.4662394523621 s
+
+
+searching pytorch_cnn-10743.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.22 %
+Execution time of training loop:  924.0916810035706 s
+
+
+searching pytorch_cnn-10744.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.73 %
+Execution time of training loop:  955.1542439460754 s
+
+
+searching pytorch_cnn-10747.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.83 %
+Execution time of training loop:  921.9625902175903 s
+
+
+searching pytorch_cnn-10752.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.01 %
+Execution time of training loop:  980.7334184646606 s
+
+
+searching pytorch_cnn-10757.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 62.15 %
+Execution time of training loop:  923.900669336319 s
+
+
+searching pytorch_cnn-10759.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.17 %
+Execution time of training loop:  941.9739685058594 s
+
+
+searching pytorch_cnn-10760.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.84 %
+Execution time of training loop:  934.5502200126648 s
+
+
+searching pytorch_cnn-10762.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.59 %
+Execution time of training loop:  980.359277009964 s
+
+
+searching pytorch_cnn-10763.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.9 %
+Execution time of training loop:  931.3979496955872 s
+
+
+searching pytorch_cnn-10765.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.41 %
+Execution time of training loop:  957.0581593513489 s
+
+
+searching pytorch_cnn-10767.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.22 %
+Execution time of training loop:  921.9366114139557 s
+
+
+searching pytorch_cnn-10771.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.29 %
+Execution time of training loop:  980.7594513893127 s
+
+
+searching pytorch_cnn-10773.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.29 %
+Execution time of training loop:  943.4430375099182 s
+
+
+searching pytorch_cnn-10776.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.06 %
+Execution time of training loop:  924.3073928356171 s
+
+
+searching pytorch_cnn-11113.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.42 %
+Execution time of training loop:  993.3531863689423 s
+
+
+searching pytorch_cnn-11114.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.72 %
+Execution time of training loop:  935.8630113601685 s
+
+
+searching pytorch_cnn-11115.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.21 %
+Execution time of training loop:  969.1503009796143 s
+
+
+searching pytorch_cnn-11116.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.18 %
+Execution time of training loop:  988.3136029243469 s
+
+
+searching pytorch_cnn-11117.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.55 %
+Execution time of training loop:  1000.2000274658203 s
+
+
+searching pytorch_cnn-11118.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.16 %
+Execution time of training loop:  998.4058690071106 s
+
+
+searching pytorch_cnn-11119.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.93 %
+Execution time of training loop:  930.9064979553223 s
+
+
+searching pytorch_cnn-11120.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.82 %
+Execution time of training loop:  935.7506449222565 s
+
+
+searching pytorch_cnn-11127.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.12 %
+Execution time of training loop:  963.8484683036804 s
+
+
+searching pytorch_cnn-11128.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.98 %
+Execution time of training loop:  985.0334289073944 s
+
+
+searching pytorch_cnn-11129.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 61.89 %
+Execution time of training loop:  1006.1654133796692 s
+
+
+searching pytorch_cnn-11130.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.69 %
+Execution time of training loop:  1002.558315038681 s
+
+
+searching pytorch_cnn-11139.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.21 %
+Execution time of training loop:  963.8857078552246 s
+
+
+searching pytorch_cnn-11140.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.78 %
+Execution time of training loop:  997.1823120117188 s
+
+
+searching pytorch_cnn-11142.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.5 %
+Execution time of training loop:  986.6560461521149 s
+
+
+searching pytorch_cnn-11143.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.47 %
+Execution time of training loop:  1002.3788018226624 s
+
+
+searching pytorch_cnn-11151.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.59 %
+Execution time of training loop:  933.4682281017303 s
+
+
+searching pytorch_cnn-11154.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.33 %
+Execution time of training loop:  1004.4932572841644 s
+
+
+searching pytorch_cnn-11155.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.96 %
+Execution time of training loop:  1014.5302317142487 s
+
+
+searching pytorch_cnn-11156.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.34 %
+Execution time of training loop:  1006.5928635597229 s
+
+
+searching pytorch_cnn-11164.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.16 %
+Execution time of training loop:  933.0876936912537 s
+
+
+searching pytorch_cnn-11166.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.73 %
+Execution time of training loop:  1003.5285634994507 s
+
+
+searching pytorch_cnn-11167.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.3 %
+Execution time of training loop:  989.9033699035645 s
+
+
+searching pytorch_cnn-11168.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.62 %
+Execution time of training loop:  1008.9133470058441 s
+
+
+searching pytorch_cnn-11171.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.07 %
+Execution time of training loop:  936.2131540775299 s
+
+
+searching pytorch_cnn-11172.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.21 %
+Execution time of training loop:  1011.4256980419159 s
+
+
+searching pytorch_cnn-11173.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.17 %
+Execution time of training loop:  993.2209525108337 s
+
+
+searching pytorch_cnn-11174.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.65 %
+Execution time of training loop:  1016.7574524879456 s
+
+
+searching pytorch_cnn-11181.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.43 %
+Execution time of training loop:  929.205314874649 s
+
+
+searching pytorch_cnn-11186.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.48 %
+Execution time of training loop:  975.3229990005493 s
+
+
+searching pytorch_cnn-11187.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.91 %
+Execution time of training loop:  918.7685556411743 s
+
+
+searching pytorch_cnn-11189.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.5 %
+Execution time of training loop:  1016.7523097991943 s
+
+
+searching pytorch_cnn-11197.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.3 %
+Execution time of training loop:  930.9207437038422 s
+
+
+searching pytorch_cnn-11202.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.82 %
+Execution time of training loop:  921.8220000267029 s
+
+
+searching pytorch_cnn-11204.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.03 %
+Execution time of training loop:  991.0802683830261 s
+
+
+searching pytorch_cnn-11206.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.9 %
+Execution time of training loop:  930.7118916511536 s
+
+
+searching pytorch_cnn-11208.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.48 %
+Execution time of training loop:  933.1546485424042 s
+
+
+searching pytorch_cnn-11209.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.79 %
+Execution time of training loop:  1002.2789061069489 s
+
+
+searching pytorch_cnn-11211.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.2 %
+Execution time of training loop:  1017.9327890872955 s
+
+
+searching pytorch_cnn-11212.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.79 %
+Execution time of training loop:  927.155200958252 s
+
+
+searching pytorch_cnn-11215.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.0 %
+Execution time of training loop:  924.6238605976105 s
+
+
+searching pytorch_cnn-11218.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.82 %
+Execution time of training loop:  972.213508605957 s
+
+
+searching pytorch_cnn-11219.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.38 %
+Execution time of training loop:  1007.5604922771454 s
+
+
+searching pytorch_cnn-11221.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.09 %
+Execution time of training loop:  1003.2310390472412 s
+
+
+searching pytorch_cnn-11225.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 62.58 %
+Execution time of training loop:  925.6173686981201 s
+
+
+searching pytorch_cnn-11229.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.68 %
+Execution time of training loop:  1011.5283823013306 s
+
+
+searching pytorch_cnn-11230.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.81 %
+Execution time of training loop:  990.5845732688904 s
+
+
+searching pytorch_cnn-11232.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 62.74 %
+Execution time of training loop:  925.5662603378296 s
+
+
+searching pytorch_cnn-11235.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.48 %
+Execution time of training loop:  938.4404637813568 s
+
+
+searching pytorch_cnn-11239.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.01 %
+Execution time of training loop:  1017.8833153247833 s
+
+
+searching pytorch_cnn-11305.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.67 %
+Execution time of training loop:  935.6819090843201 s
+
+
+searching pytorch_cnn-11306.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.3 %
+Execution time of training loop:  923.6379127502441 s
+
+
+searching pytorch_cnn-11307.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.48 %
+Execution time of training loop:  990.9545667171478 s
+
+
+searching pytorch_cnn-11308.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 62.82 %
+Execution time of training loop:  951.5374612808228 s
+
+
+searching pytorch_cnn-11320.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.24 %
+Execution time of training loop:  990.2427704334259 s
+
+
+searching pytorch_cnn-11321.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.38 %
+Execution time of training loop:  920.6548979282379 s
+
+
+searching pytorch_cnn-11323.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 62.63 %
+Execution time of training loop:  933.6152894496918 s
+
+
+searching pytorch_cnn-11324.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.35 %
+Execution time of training loop:  988.4019551277161 s
+
+
+searching pytorch_cnn-11329.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.37 %
+Execution time of training loop:  935.4491047859192 s
+
+
+searching pytorch_cnn-11330.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.32 %
+Execution time of training loop:  928.2275240421295 s
+
+
+searching pytorch_cnn-11331.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.06 %
+Execution time of training loop:  1012.2612645626068 s
+
+
+searching pytorch_cnn-11333.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.94 %
+Execution time of training loop:  975.6841065883636 s
+
+
+searching pytorch_cnn-11334.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.09 %
+Execution time of training loop:  924.1306281089783 s
+
+
+searching pytorch_cnn-11335.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.76 %
+Execution time of training loop:  921.4747204780579 s
+
+
+searching pytorch_cnn-11337.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.64 %
+Execution time of training loop:  991.782407283783 s
+
+
+searching pytorch_cnn-11338.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.51 %
+Execution time of training loop:  1016.0795550346375 s
+
+
+searching pytorch_cnn-11348.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.17 %
+Execution time of training loop:  921.4815244674683 s
+
+
+searching pytorch_cnn-11349.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.86 %
+Execution time of training loop:  1033.159987449646 s
+
+
+searching pytorch_cnn-11352.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.88 %
+Execution time of training loop:  1000.9844753742218 s
+
+
+searching pytorch_cnn-11353.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.89 %
+Execution time of training loop:  1004.5741407871246 s
+
+
+searching pytorch_cnn-11362.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.45 %
+Execution time of training loop:  929.1192622184753 s
+
+
+searching pytorch_cnn-11363.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.38 %
+Execution time of training loop:  918.9915006160736 s
+
+
+searching pytorch_cnn-11366.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.13 %
+Execution time of training loop:  1005.2110035419464 s
+
+
+searching pytorch_cnn-11367.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.53 %
+Execution time of training loop:  1005.3816726207733 s
+
+
+searching pytorch_cnn-11368.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.7 %
+Execution time of training loop:  941.8427786827087 s
+
+
+searching pytorch_cnn-11370.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.8 %
+Execution time of training loop:  939.8323485851288 s
+
+
+searching pytorch_cnn-11372.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.65 %
+Execution time of training loop:  982.8822484016418 s
+
+
+searching pytorch_cnn-11374.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.28 %
+Execution time of training loop:  957.7500190734863 s
+
+
+searching pytorch_cnn-11379.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.44 %
+Execution time of training loop:  918.4606516361237 s
+
+
+searching pytorch_cnn-11381.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.43 %
+Execution time of training loop:  933.68150639534 s
+
+
+searching pytorch_cnn-11383.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.37 %
+Execution time of training loop:  977.5360910892487 s
+
+
+searching pytorch_cnn-11385.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.84 %
+Execution time of training loop:  1000.1347796916962 s
+
+
+searching pytorch_cnn-11387.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.58 %
+Execution time of training loop:  942.2275898456573 s
+
+
+searching pytorch_cnn-11389.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.6 %
+Execution time of training loop:  983.6804115772247 s
+
+
+searching pytorch_cnn-11392.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.89 %
+Execution time of training loop:  994.9609670639038 s
+
+
+searching pytorch_cnn-11393.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.68 %
+Execution time of training loop:  987.2999520301819 s
+
+
+searching pytorch_cnn-11398.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.56 %
+Execution time of training loop:  924.6561050415039 s
+
+
+searching pytorch_cnn-11400.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.17 %
+Execution time of training loop:  997.7574379444122 s
+
+
+searching pytorch_cnn-11405.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.51 %
+Execution time of training loop:  1006.1206831932068 s
+
+
+searching pytorch_cnn-11407.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.05 %
+Execution time of training loop:  1014.6621582508087 s
+
+
+searching pytorch_cnn-11410.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.72 %
+Execution time of training loop:  932.0807008743286 s
+
+
+searching pytorch_cnn-11413.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.78 %
+Execution time of training loop:  920.3759460449219 s
+
+
+searching pytorch_cnn-11416.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.5 %
+Execution time of training loop:  1032.59295296669 s
+
+
+searching pytorch_cnn-11417.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.15 %
+Execution time of training loop:  992.7883343696594 s
+
+
+searching pytorch_cnn-11418.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.31 %
+Execution time of training loop:  1027.499750137329 s
+
+
+searching pytorch_cnn-11419.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.91 %
+Execution time of training loop:  989.597761631012 s
+
+
+searching pytorch_cnn-11420.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.61 %
+Execution time of training loop:  1041.3428177833557 s
+
+
+searching pytorch_cnn-11421.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.38 %
+Execution time of training loop:  990.1561939716339 s
+
+
+searching pytorch_cnn-11423.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.28 %
+Execution time of training loop:  987.691309928894 s
+
+
+searching pytorch_cnn-11426.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.65 %
+Execution time of training loop:  1013.1650342941284 s
+
+
+searching pytorch_cnn-11433.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 62.53 %
+Execution time of training loop:  979.2634809017181 s
+
+
+searching pytorch_cnn-11434.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 62.86 %
+Execution time of training loop:  990.6443214416504 s
+
+
+searching pytorch_cnn-11439.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.67 %
+Execution time of training loop:  923.6402127742767 s
+
+
+searching pytorch_cnn-11443.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.39 %
+Execution time of training loop:  938.4244914054871 s
+
+
+searching pytorch_cnn-11447.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.14 %
+Execution time of training loop:  960.3131146430969 s
+
+
+searching pytorch_cnn-11448.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.91 %
+Execution time of training loop:  1022.3244104385376 s
+
+
+searching pytorch_cnn-11450.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.81 %
+Execution time of training loop:  1026.067824602127 s
+
+
+searching pytorch_cnn-11451.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.24 %
+Execution time of training loop:  1013.5857424736023 s
+
+
+searching pytorch_cnn-11453.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.97 %
+Execution time of training loop:  992.4166781902313 s
+
+
+searching pytorch_cnn-11455.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 62.79 %
+Execution time of training loop:  949.306079864502 s
+
+
+searching pytorch_cnn-11457.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.48 %
+Execution time of training loop:  989.3042709827423 s
+
+
+searching pytorch_cnn-11460.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.73 %
+Execution time of training loop:  997.699859380722 s
+
+
+searching pytorch_cnn-11464.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.44 %
+Execution time of training loop:  955.6768531799316 s
+
+
+searching pytorch_cnn-11465.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.72 %
+Execution time of training loop:  1029.8613908290863 s
+
+
+searching pytorch_cnn-11468.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.7 %
+Execution time of training loop:  993.5816967487335 s
+
+
+searching pytorch_cnn-11469.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.2 %
+Execution time of training loop:  1019.9902856349945 s
+
+
+searching pytorch_cnn-11471.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.67 %
+Execution time of training loop:  1009.3301150798798 s
+
+
+searching pytorch_cnn-11473.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.29 %
+Execution time of training loop:  989.0577619075775 s
+
+
+searching pytorch_cnn-11475.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.82 %
+Execution time of training loop:  969.9567604064941 s
+
+
+searching pytorch_cnn-11478.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.54 %
+Execution time of training loop:  1010.1370644569397 s
+
+
+searching pytorch_cnn-11484.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.27 %
+Execution time of training loop:  1018.8736302852631 s
+
+
+searching pytorch_cnn-11487.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.23 %
+Execution time of training loop:  922.455099105835 s
+
+
+searching pytorch_cnn-11491.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.83 %
+Execution time of training loop:  982.2918446063995 s
+
+
+searching pytorch_cnn-11494.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.07 %
+Execution time of training loop:  1018.7573101520538 s
+
+
+searching pytorch_cnn-11497.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.98 %
+Execution time of training loop:  1035.8730399608612 s
+
+
+searching pytorch_cnn-11498.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.2 %
+Execution time of training loop:  933.8264169692993 s
+
+
+searching pytorch_cnn-11500.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.82 %
+Execution time of training loop:  994.4997172355652 s
+
+
+searching pytorch_cnn-11501.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.81 %
+Execution time of training loop:  923.807178735733 s
+
+
+searching pytorch_cnn-11502.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.88 %
+Execution time of training loop:  934.6030867099762 s
+
+
+searching pytorch_cnn-11503.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.76 %
+Execution time of training loop:  979.243034362793 s
+
+
+searching pytorch_cnn-11504.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.91 %
+Execution time of training loop:  1003.4112629890442 s
+
+
+searching pytorch_cnn-11507.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.82 %
+Execution time of training loop:  993.1759655475616 s
+
+
+searching pytorch_cnn-11510.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.26 %
+Execution time of training loop:  927.1389446258545 s
+
+
+searching pytorch_cnn-11512.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.95 %
+Execution time of training loop:  993.480818271637 s
+
+
+searching pytorch_cnn-11517.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.04 %
+Execution time of training loop:  1014.3431107997894 s
+
+
+searching pytorch_cnn-11522.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.83 %
+Execution time of training loop:  1026.2242090702057 s
+
+
+searching pytorch_cnn-11526.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.77 %
+Execution time of training loop:  1001.9422926902771 s
+
+
+searching pytorch_cnn-11528.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.49 %
+Execution time of training loop:  928.8114838600159 s
+
+
+searching pytorch_cnn-11531.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.94 %
+Execution time of training loop:  959.7896535396576 s
+
+
+searching pytorch_cnn-11533.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.65 %
+Execution time of training loop:  951.0616664886475 s
+
+
+searching pytorch_cnn-11534.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.86 %
+Execution time of training loop:  997.4551920890808 s
+
+
+searching pytorch_cnn-11535.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 62.94 %
+Execution time of training loop:  928.1458537578583 s
+
+
+searching pytorch_cnn-11538.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.47 %
+Execution time of training loop:  999.4902031421661 s
+
+
+searching pytorch_cnn-11541.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.21 %
+Execution time of training loop:  1004.4682352542877 s
+
+
+searching pytorch_cnn-11544.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.1 %
+Execution time of training loop:  1013.3078730106354 s
+
+
+searching pytorch_cnn-11545.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.17 %
+Execution time of training loop:  997.2274885177612 s
+
+
+searching pytorch_cnn-11549.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.5 %
+Execution time of training loop:  1006.6809432506561 s
+
+
+searching pytorch_cnn-11551.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.97 %
+Execution time of training loop:  1034.5735301971436 s
+
+
+searching pytorch_cnn-11552.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.45 %
+Execution time of training loop:  1029.944367647171 s
+
+
+searching pytorch_cnn-11553.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 62.9 %
+Execution time of training loop:  1001.906391620636 s
+
+
+searching pytorch_cnn-11869.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 62.63 %
+Execution time of training loop:  996.9675707817078 s
+
+
+searching pytorch_cnn-11870.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.73 %
+Execution time of training loop:  1009.9951775074005 s
+
+
+searching pytorch_cnn-11871.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.94 %
+Execution time of training loop:  989.5594205856323 s
+
+
+searching pytorch_cnn-11872.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.97 %
+Execution time of training loop:  1001.3287136554718 s
+
+
+searching pytorch_cnn-11877.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.45 %
+Execution time of training loop:  975.9408540725708 s
+
+
+searching pytorch_cnn-11878.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.93 %
+Execution time of training loop:  1015.1238286495209 s
+
+
+searching pytorch_cnn-11879.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.47 %
+Execution time of training loop:  1011.8089575767517 s
+
+
+searching pytorch_cnn-11880.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.84 %
+Execution time of training loop:  995.9769148826599 s
+
+
+searching pytorch_cnn-11883.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.15 %
+Execution time of training loop:  932.50119805336 s
+
+
+searching pytorch_cnn-11884.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.07 %
+Execution time of training loop:  1025.9534449577332 s
+
+
+searching pytorch_cnn-11885.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.77 %
+Execution time of training loop:  930.1223948001862 s
+
+
+searching pytorch_cnn-11886.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.7 %
+Execution time of training loop:  989.8223655223846 s
+
+
+searching pytorch_cnn-11898.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.72 %
+Execution time of training loop:  977.2241868972778 s
+
+
+searching pytorch_cnn-11899.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.6 %
+Execution time of training loop:  916.3646082878113 s
+
+
+searching pytorch_cnn-11902.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.76 %
+Execution time of training loop:  934.5209474563599 s
+
+
+searching pytorch_cnn-11903.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.45 %
+Execution time of training loop:  1026.4083483219147 s
+
+
+searching pytorch_cnn-11909.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 62.22 %
+Execution time of training loop:  1017.1629111766815 s
+
+
+searching pytorch_cnn-11910.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.84 %
+Execution time of training loop:  1005.4514787197113 s
+
+
+searching pytorch_cnn-11911.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.67 %
+Execution time of training loop:  994.1925799846649 s
+
+
+searching pytorch_cnn-11912.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.21 %
+Execution time of training loop:  1001.1748588085175 s
+
+
+searching pytorch_cnn-11916.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.18 %
+Execution time of training loop:  995.3729710578918 s
+
+
+searching pytorch_cnn-11917.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.6 %
+Execution time of training loop:  1026.2616653442383 s
+
+
+searching pytorch_cnn-11919.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.35 %
+Execution time of training loop:  1008.355331659317 s
+
+
+searching pytorch_cnn-11921.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.49 %
+Execution time of training loop:  991.5617949962616 s
+
+
+searching pytorch_cnn-11927.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.26 %
+Execution time of training loop:  1010.7311723232269 s
+
+
+searching pytorch_cnn-11928.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.49 %
+Execution time of training loop:  996.7159383296967 s
+
+
+searching pytorch_cnn-11929.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.87 %
+Execution time of training loop:  956.4468383789062 s
+
+
+searching pytorch_cnn-11930.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.04 %
+Execution time of training loop:  995.2308938503265 s
+
+
+searching pytorch_cnn-11937.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.42 %
+Execution time of training loop:  1029.0537719726562 s
+
+
+searching pytorch_cnn-11938.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.69 %
+Execution time of training loop:  989.6903033256531 s
+
+
+searching pytorch_cnn-11939.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.44 %
+Execution time of training loop:  987.8716108798981 s
+
+
+searching pytorch_cnn-11942.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.59 %
+Execution time of training loop:  987.2548470497131 s
+
+
+searching pytorch_cnn-11956.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.84 %
+Execution time of training loop:  1013.0351057052612 s
+
+
+searching pytorch_cnn-11957.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.06 %
+Execution time of training loop:  1046.8305397033691 s
+
+
+searching pytorch_cnn-11958.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.18 %
+Execution time of training loop:  1033.3109142780304 s
+
+
+searching pytorch_cnn-11960.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.15 %
+Execution time of training loop:  1009.7051084041595 s
+
+
+searching pytorch_cnn-11968.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.14 %
+Execution time of training loop:  1002.5480425357819 s
+
+
+searching pytorch_cnn-11969.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.68 %
+Execution time of training loop:  1028.5003564357758 s
+
+
+searching pytorch_cnn-11970.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.13 %
+Execution time of training loop:  1017.6964011192322 s
+
+
+searching pytorch_cnn-11971.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.87 %
+Execution time of training loop:  1001.5040402412415 s
+
+
+searching pytorch_cnn-11975.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.09 %
+Execution time of training loop:  1015.3283534049988 s
+
+
+searching pytorch_cnn-11976.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.87 %
+Execution time of training loop:  1031.1052820682526 s
+
+
+searching pytorch_cnn-11977.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.63 %
+Execution time of training loop:  987.8639326095581 s
+
+
+searching pytorch_cnn-11979.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.72 %
+Execution time of training loop:  984.7050256729126 s
+
+
+searching pytorch_cnn-11989.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.86 %
+Execution time of training loop:  1011.2211184501648 s
+
+
+searching pytorch_cnn-11990.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.7 %
+Execution time of training loop:  1017.2252810001373 s
+
+
+searching pytorch_cnn-11992.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.98 %
+Execution time of training loop:  996.1075174808502 s
+
+
+searching pytorch_cnn-11993.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.07 %
+Execution time of training loop:  980.0516445636749 s
+
+
+searching pytorch_cnn-12009.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.44 %
+Execution time of training loop:  1005.8920168876648 s
+
+
+searching pytorch_cnn-12010.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.8 %
+Execution time of training loop:  990.5825972557068 s
+
+
+searching pytorch_cnn-12011.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.33 %
+Execution time of training loop:  987.9101989269257 s
+
+
+searching pytorch_cnn-12012.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.28 %
+Execution time of training loop:  1009.6661531925201 s
+
+
+searching pytorch_cnn-12016.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.82 %
+Execution time of training loop:  995.4781150817871 s
+
+
+searching pytorch_cnn-12017.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.6 %
+Execution time of training loop:  977.3043115139008 s
+
+
+searching pytorch_cnn-12019.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.78 %
+Execution time of training loop:  991.8765802383423 s
+
+
+searching pytorch_cnn-12020.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.17 %
+Execution time of training loop:  943.3966767787933 s
+
+
+searching pytorch_cnn-12027.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.27 %
+Execution time of training loop:  969.6815183162689 s
+
+
+searching pytorch_cnn-12028.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.02 %
+Execution time of training loop:  983.0267915725708 s
+
+
+searching pytorch_cnn-12029.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.18 %
+Execution time of training loop:  958.1415767669678 s
+
+
+searching pytorch_cnn-12030.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.94 %
+Execution time of training loop:  986.5318987369537 s
+
+
+searching pytorch_cnn-12034.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.22 %
+Execution time of training loop:  999.9418268203735 s
+
+
+searching pytorch_cnn-12035.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.61 %
+Execution time of training loop:  940.5916614532471 s
+
+
+searching pytorch_cnn-12036.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.44 %
+Execution time of training loop:  920.3060865402222 s
+
+
+searching pytorch_cnn-12037.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.82 %
+Execution time of training loop:  991.2220289707184 s
+
+
+searching pytorch_cnn-12050.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.64 %
+Execution time of training loop:  938.3878271579742 s
+
+
+searching pytorch_cnn-12051.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.39 %
+Execution time of training loop:  943.1474063396454 s
+
+
+searching pytorch_cnn-12053.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.66 %
+Execution time of training loop:  938.7373309135437 s
+
+
+searching pytorch_cnn-12054.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.75 %
+Execution time of training loop:  929.8255400657654 s
+
+
+searching pytorch_cnn-12062.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.05 %
+Execution time of training loop:  976.963860988617 s
+
+
+searching pytorch_cnn-12063.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.0 %
+Execution time of training loop:  981.8455710411072 s
+
+
+searching pytorch_cnn-12064.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.05 %
+Execution time of training loop:  922.8090171813965 s
+
+
+searching pytorch_cnn-12065.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.38 %
+Execution time of training loop:  939.7323803901672 s
+
+
+searching pytorch_cnn-12066.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.09 %
+Execution time of training loop:  1033.0205264091492 s
+
+
+searching pytorch_cnn-12067.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.23 %
+Execution time of training loop:  1009.3889939785004 s
+
+
+searching pytorch_cnn-12068.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.1 %
+Execution time of training loop:  934.6817827224731 s
+
+
+searching pytorch_cnn-12069.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.78 %
+Execution time of training loop:  938.6735718250275 s
+
+
+searching pytorch_cnn-12077.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.99 %
+Execution time of training loop:  939.847371339798 s
+
+
+searching pytorch_cnn-12078.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.27 %
+Execution time of training loop:  937.222841501236 s
+
+
+searching pytorch_cnn-12080.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.58 %
+Execution time of training loop:  1001.4783742427826 s
+
+
+searching pytorch_cnn-12081.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.73 %
+Execution time of training loop:  998.3739905357361 s
+
+
+searching pytorch_cnn-12093.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.84 %
+Execution time of training loop:  1042.7789521217346 s
+
+
+searching pytorch_cnn-12094.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.14 %
+Execution time of training loop:  1003.264627456665 s
+
+
+searching pytorch_cnn-12096.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 62.95 %
+Execution time of training loop:  995.2074167728424 s
+
+
+searching pytorch_cnn-12097.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.07 %
+Execution time of training loop:  926.6229009628296 s
+
+
+searching pytorch_cnn-12104.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 66.15 %
+Execution time of training loop:  1010.958488702774 s
+
+
+searching pytorch_cnn-12105.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.45 %
+Execution time of training loop:  1003.3317112922668 s
+
+
+searching pytorch_cnn-12106.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.68 %
+Execution time of training loop:  930.6100189685822 s
+
+
+searching pytorch_cnn-12107.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.88 %
+Execution time of training loop:  1001.9866833686829 s
+
+
+searching pytorch_cnn-12114.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.03 %
+Execution time of training loop:  924.7607290744781 s
+
+
+searching pytorch_cnn-12115.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.49 %
+Execution time of training loop:  947.83189868927 s
+
+
+searching pytorch_cnn-12117.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 62.73 %
+Execution time of training loop:  988.5445914268494 s
+
+
+searching pytorch_cnn-12118.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.03 %
+Execution time of training loop:  968.6019430160522 s
+
+
+searching pytorch_cnn-12122.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.07 %
+Execution time of training loop:  1020.3432745933533 s
+
+
+searching pytorch_cnn-12123.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.54 %
+Execution time of training loop:  969.9678514003754 s
+
+
+searching pytorch_cnn-12124.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.12 %
+Execution time of training loop:  988.2746584415436 s
+
+
+searching pytorch_cnn-12125.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.95 %
+Execution time of training loop:  982.1342875957489 s
+
+
+searching pytorch_cnn-12135.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.63 %
+Execution time of training loop:  1022.9839634895325 s
+
+
+searching pytorch_cnn-12136.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 63.95 %
+Execution time of training loop:  991.400012254715 s
+
+
+searching pytorch_cnn-12139.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 65.65 %
+Execution time of training loop:  1017.325715303421 s
+
+
+searching pytorch_cnn-12140.out
+Batch size: 5
+Number of epochs: 38
+Accuracy of the network: 64.62 %
+Execution time of training loop:  992.2294733524323 s
+
+
+Top run: pytorch_cnn-10668.out
+Accuracy of top run: 66.79 %
+
+
